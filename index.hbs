@@ -1,0 +1,87 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! Each post will be output using this markup }}
+{{#foreach posts}}
+
+{{#if @first}}
+{{! The newest, featured post }}
+<section class="content" id="featured-content">
+
+        <section class="post-row"  id="post-first">
+
+            <article class="{{post_class}} {{#if @even}}even{{else}}odd{{/if}}" id="post-featured">
+                <section class="post-image">
+                    <a href="/{{slug}}" class="post-image-link" rel="bookmark" title="{{title}}">
+                        {{content words="0"}}
+                    </a>
+                </section>
+
+                <header class="post-header">
+                    {{#if tags}}{{#each tags}} 
+                    <span class="post-tag"><span class="tag-name">{{this.name}}</span></span>
+                    {{/each}}{{/if}}
+
+                    <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+
+                    <span class="post-meta">{{author.name}} | <time datetime="{{date format='YYYY-MM-DD'}}">{{date published_at format="MMMM DD, YYYY"}}</time></span>
+                </header>
+
+                <section class="post-excerpt">
+                    <p>{{excerpt words="50"}}&hellip;</p>
+                </section>
+            </article>
+
+        </section>
+
+</section>
+
+
+{{! The main posts }}
+<section class="content">
+
+    <section class="top-stories"><span class="section-header">Top Stories</span></section>
+
+    {{!! Open new post-row }}
+    <section class="post-row">
+
+{{else}}
+
+        <article class="{{post_class}} {{#if @even}}even{{else}}odd{{/if}}" id="post-front">
+            <section class="post-image">
+                <a href="/{{slug}}" class="post-image-link" rel="bookmark" title="{{title}}">
+                    {{content words="0"}}
+                </a>
+            </section>
+
+            <header class="post-header">
+                {{#if tags}}{{#each tags}} 
+                <span class="post-tag"><span class="tag-name">{{this.name}}</span></span>
+                {{/each}}{{/if}}
+
+                <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+
+                <span class="post-meta">{{author.name}} | <time datetime="{{date format='YYYY-MM-DD'}}">{{date published_at format="MMMM DD, YYYY"}}</time></span>
+            </header>
+
+            <section class="post-excerpt">
+                <p>{{excerpt words="30"}}&hellip;</p>
+            </section>
+        </article>
+
+{{/if}}
+
+{{/foreach}}
+
+     {{!! Close post-row }}
+    </section>
+
+    <section id="pagination">
+    {{!! After all the posts, we have the previous/next pagination links }}
+    {{pagination}}
+    </section>
+
+ {{!! Close content }}
+</section>

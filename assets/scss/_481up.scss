@@ -1,0 +1,56 @@
+/******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: 481px and Up Stylesheet
+
+This stylesheet is loaded for larger devices. It's set to 
+481px because at 480px it would load on a landscaped iPhone.
+This isn't ideal because then you would be loading all those
+extra styles on that same mobile connection. 
+
+A word of warning. This size COULD be a larger mobile device,
+so you still want to keep it pretty light and simply expand
+upon your base.scss styles.
+
+******************************************************************/
+
+#blog-header {
+	.branding {
+		@include span-columns(10);
+	}
+	.side-header {
+		@include span-columns(2);
+		position: relative;
+		.top-link {
+			border-top: none;
+			background: none;
+		}
+	}
+
+	.arrow {
+		border-bottom: 10px solid $light-border;
+	}
+
+	.inner-header {
+		@include outer-container();
+		border-left: 1px solid lighten( $light-border, 30% );
+		border-right: 1px solid lighten( $light-border, 30% );
+	}
+}
+
+.content {
+	.post-row {
+		background: $color-white;
+		border-left: 1px solid $light-border;
+		border-right: 1px solid $light-border;
+	}
+}
+
+#featured-content {
+	.post-row {
+		background: none;
+		border: none;
+	}
+}
+

@@ -1,0 +1,131 @@
+/* =============================================================
+
+	Kraken v3.1
+	A lightweight front-end boilerplate by Chris Ferdinandi.
+	http://gomakethings.com
+
+	Free to use under the MIT License.
+	http://gomakethings.com/mit/
+
+
+	# Colors
+	Primary (Blue): #0088cc
+	Black: #272727
+	White: #ffffff
+	Success (Green): #377f31;
+	Danger (Red): #880e14;
+	Warning (Yellow): #dba909;
+	Code (Fuscia): #dd1144;
+	Gray (Dark): #808080
+	Gray (Light): #e5e5e5
+
+	# Font Stack
+	Sans-Serif (default): "Helvetica Neue", Arial, sans-serif
+	Serif (suggested): Georgia, Times, serif
+	Monospace: Menlo, Monaco, "Courier New", monospace
+
+	# Typographic Scale
+	(For math purposes. Actual font sizes in ems.)
+	1px, 4px, 5px, 8px, 9px, 11px, 12px, 13px, 15px, 16px, 19px, 21px, 24px, 28px, 32px, 48px, 64px, 80px, 96px
+	line height: 1.5em on small screens, 1.5625em on big screens
+
+ * ============================================================= */
+
+@import
+	"components/bourbon/bourbon",
+	"components/neat/neat",
+	"config",
+	"mixins",
+	"components/reset",
+	"components/grid",
+	"components/typography",
+	"components/code",
+	"components/buttons",
+	"components/forms",
+	// "components/icons",
+	// "Import add-ons here...",
+	"components/overrides";
+
+
+/*
+BASE (MOBILE) SIZE
+This are the mobile styles. It's what people see on their phones. If
+you set a great foundation, you won't need to add too many styles in
+the other stylesheets. Remember, keep it light: Speed is Important.
+*/
+
+// styles in base.scss
+@import "base";
+
+/*
+LARGER MOBILE DEVICES
+This is for devices like the Galaxy Note or something that's
+larger than an iPhone but smaller than a tablet. Let's call them
+tweeners.
+*/
+@media only screen and (min-width: 481px) {
+
+	// styles in 481up.scss
+	@import "481up";
+
+} // end of media query
+
+/*
+TABLET & SMALLER LAPTOPS
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*/
+@media only screen and (min-width: 768px) {
+
+	// styles in 768up.scss
+	@import "768up";
+
+} // end of media query
+
+/*
+DESKTOP
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*/
+@media only screen and (min-width: 1030px) {
+
+	// styles in 1030up.scss
+	@import "1030up";
+
+} // end of media query
+
+/*
+LARGE VIEWING SIZE
+This is for the larger monitors and possibly full screen viewers.
+*/
+@media only screen and (min-width: 1240px) {
+
+	// styles in 1240up.scss
+	@import "1240up";
+
+} // end of media query
+
+
+/*
+PRINT STYLESHEET
+
+*/
+@media print {
+	@import "components/print";
+}
+
+
+/* Add tag-specific styles here
+
+.tag-ipsum {
+	.post-image {
+		border-top: 2px solid #ff0000;
+	}
+	.post-tag {
+		background: #ff0000;
+	}
+}
+
+*/

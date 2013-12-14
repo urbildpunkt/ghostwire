@@ -1,0 +1,126 @@
+/* =============================================================
+	Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop. 
+
+ * ============================================================= */
+
+
+
+/* =============================================================
+	GENERAL STYLES
+ * ============================================================= */
+
+
+
+/* =============================================================
+	HEADER STYLES
+ * ============================================================= */
+
+/* =============================================================
+	CONTENT STYLES
+ * ============================================================= */
+
+
+.post-row {
+	padding: 0;
+}
+
+.post {
+
+	.post-header {
+			margin-top: 4%;
+		}
+}
+
+#post-featured {
+	@include span-columns(12);
+	background: $color-white;
+	border-top: 1px solid lighten( $light-border, 20% );
+	border-left: 1px solid lighten( $light-border, 15% );
+	border-right: 1px solid lighten( $light-border, 15% );
+	-moz-box-shadow: 0 1px 2px #c3c3c3;
+ -webkit-box-shadow: 0 1px 2px #c3c3c3;
+         box-shadow: 0 1px 2px #c3c3c3;
+	.post-image {
+		@include span-columns(7 of 12);
+			height: 435px;
+			overflow: hidden;
+			margin-bottom: 0;
+		a {
+			display: inline-block;
+		    position: relative;
+		    right: -50%;
+		}
+		img {
+			position: relative;
+    		left: -50%;
+    		height: 480px;
+			max-width: 700px;
+			width: auto;
+		}
+	}
+
+	.post-header {
+			margin-top: 8%;
+		}
+}
+
+#post-front {
+	@include span-columns(4);
+	@include omega(3n);
+	margin-bottom: 40px; 
+
+	.post-image {
+		@include span-columns(12);
+			height: 260px;
+			overflow: hidden;
+		a {
+			display: inline-block;
+		    position: relative;
+		    right: -50%;
+		}
+		img {
+			position: relative;
+    		left: -50%;
+			height: 260px;
+			max-width: 500px;
+			width: auto;
+		}
+	}
+}
+
+.post-tag {
+	background: none;
+	.tag-name {
+		display: none;
+	}
+}
+
+.post-tag:hover, .post-tag:first-child {
+	background: rgba(0,0,0,0.9);
+	.tag-name {
+		display: block;
+	}
+	
+}
+
+.tag-handle {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -4px;
+	width: 2px;
+	height: 100%;
+	background: #ff0000;
+	z-index: 9999999;
+}
+
+.tag-handle:hover {
+	background: #00ff00;
+}
+
+.page-content {
+	@include span-columns(9);
+}
