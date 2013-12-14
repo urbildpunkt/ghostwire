@@ -1,7 +1,3 @@
-/* =============================================================
-    Add your scripts here.
- * ============================================================= */
-
 
 // IE8 ployfill for GetComputed Style (for Responsive Script below)
 if (!window.getComputedStyle) {

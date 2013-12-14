@@ -1,33 +1,10 @@
 /* =============================================================
+	Ghostwire v1.0
+	by John Quealy http://urbildpunkt.com
 
 	Kraken v3.1
 	A lightweight front-end boilerplate by Chris Ferdinandi.
 	http://gomakethings.com
-
-	Free to use under the MIT License.
-	http://gomakethings.com/mit/
-
-
-	# Colors
-	Primary (Blue): #0088cc
-	Black: #272727
-	White: #ffffff
-	Success (Green): #377f31;
-	Danger (Red): #880e14;
-	Warning (Yellow): #dba909;
-	Code (Fuscia): #dd1144;
-	Gray (Dark): #808080
-	Gray (Light): #e5e5e5
-
-	# Font Stack
-	Sans-Serif (default): "Helvetica Neue", Arial, sans-serif
-	Serif (suggested): Georgia, Times, serif
-	Monospace: Menlo, Monaco, "Courier New", monospace
-
-	# Typographic Scale
-	(For math purposes. Actual font sizes in ems.)
-	1px, 4px, 5px, 8px, 9px, 11px, 12px, 13px, 15px, 16px, 19px, 21px, 24px, 28px, 32px, 48px, 64px, 80px, 96px
-	line height: 1.5em on small screens, 1.5625em on big screens
 
  * ============================================================= */
 * {
@@ -709,7 +686,7 @@ This are the mobile styles. It's what people see on their phones. If
 you set a great foundation, you won't need to add too many styles in
 the other stylesheets. Remember, keep it light: Speed is Important.
 */
-/******************************************************************
+/* =============================================================
 
 Stylesheet: Base Mobile Stylesheet
 
@@ -718,7 +695,7 @@ loaded by mobile devices. You want to keep it as minimal as
 possible. This is called at the top of the main stylsheet
 and will be used across all viewports.
 
-******************************************************************/
+ * ============================================================= */
 /* =============================================================
 	GENERAL STYLES
  * ============================================================= */
@@ -786,12 +763,9 @@ body {
     float: left;
     font-size: 1.375em;
     padding-left: 5px; }
-  #blog-header h1:after {
-    content: ': News';
-    color: #99999c; }
 
 /* =============================================================
-	CONTENT STYLES
+	POST STYLES
  * ============================================================= */
 #featured-content {
   *zoom: 1;
@@ -872,6 +846,48 @@ body {
     padding-left: 10px;
     font-size: 0.875em; }
 
+.post-tag {
+  display: inline-block;
+  height: 24px;
+  position: absolute;
+  top: 20px;
+  left: -2px;
+  font-size: 0.626em;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px 10px;
+  background: rgba(0, 0, 0, 0.9);
+  border-left: 2px solid #333333; }
+
+.post-tag:nth-child(2) {
+  top: 50px; }
+
+.post-tag:nth-child(3) {
+  top: 80px; }
+
+.post-tag:nth-child(4) {
+  top: 110px; }
+
+.post-tag:nth-child(5) {
+  top: 140px; }
+
+.post-tag:nth-child(1n+6) {
+  display: none; }
+
+.post-title {
+  margin-bottom: .1em; }
+
+.post-meta, .page-meta {
+  display: block;
+  font-size: .75em;
+  font-weight: 300;
+  letter-spacing: .1em;
+  color: #99999c;
+  text-transform: uppercase;
+  margin-bottom: .5em; }
+
 #pagination {
   *zoom: 1;
   max-width: 68em;
@@ -931,48 +947,9 @@ body {
 .newer-posts {
   left: 0; }
 
-.post-tag {
-  display: inline-block;
-  height: 24px;
-  position: absolute;
-  top: 20px;
-  left: -2px;
-  font-size: 0.626em;
-  font-weight: 300;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 5px 10px;
-  background: rgba(0, 0, 0, 0.9);
-  border-left: 2px solid #333333; }
-
-.post-tag:nth-child(2) {
-  top: 50px; }
-
-.post-tag:nth-child(3) {
-  top: 80px; }
-
-.post-tag:nth-child(4) {
-  top: 110px; }
-
-.post-tag:nth-child(5) {
-  top: 140px; }
-
-.post-tag:nth-child(1n+6) {
-  display: none; }
-
-.post-title {
-  margin-bottom: .1em; }
-
-.post-meta, .page-meta {
-  display: block;
-  font-size: .75em;
-  font-weight: 300;
-  letter-spacing: .1em;
-  color: #99999c;
-  text-transform: uppercase;
-  margin-bottom: .5em; }
-
+/* =============================================================
+	PAGE STYLES
+ * ============================================================= */
 .page-main {
   *zoom: 1;
   max-width: 68em;
@@ -1024,6 +1001,8 @@ body {
   border-top: 1px solid #333333; }
   .page-content:last-child {
     margin-right: 0; }
+  .page-content a {
+    font-weight: 700; }
 
 .page-sidebar {
   display: none; }
@@ -1080,6 +1059,9 @@ body {
 .social-title {
   display: none; }
 
+/* =============================================================
+	SOCIAL LINK STYLES
+ * ============================================================= */
 .twitter {
   background: #41b7d8;
   border-color: #41b7d8; }
@@ -1162,9 +1144,7 @@ larger than an iPhone but smaller than a tablet. Let's call them
 tweeners.
 */
 @media only screen and (min-width: 481px) {
-  /******************************************************************
-  Site Name: 
-  Author: 
+  /* ============================================================= 
   
   Stylesheet: 481px and Up Stylesheet
   
@@ -1173,11 +1153,10 @@ tweeners.
   This isn't ideal because then you would be loading all those
   extra styles on that same mobile connection. 
   
-  A word of warning. This size COULD be a larger mobile device,
-  so you still want to keep it pretty light and simply expand
-  upon your base.scss styles.
-  
-  ******************************************************************/
+   * ============================================================= */
+ /* =============================================================
+	HEADER STYLES
+ * ============================================================= */
   #blog-header .side-header {
     width: 100px; }
   #blog-header .inner-header {
@@ -1208,7 +1187,7 @@ you can add resource intensive styles.
   
    * ============================================================= */
   /* =============================================================
-  	CONTENT STYLES
+  	POST STYLES
    * ============================================================= */
   #featured-content .post-row {
     border: none; }
@@ -1228,6 +1207,9 @@ you can add resource intensive styles.
       .post .post-image:last-child {
         margin-right: 0; }
 
+  /* =============================================================
+  	PAGE STYLES
+   * ============================================================= */
   .page-header {
     float: left;
     display: block;
@@ -1269,9 +1251,6 @@ you can add resource intensive styles.
   
    * ============================================================= */
   /* =============================================================
-  	GENERAL STYLES
-   * ============================================================= */
-  /* =============================================================
   	HEADER STYLES
    * ============================================================= */
   #blog-header .inner-header {
@@ -1283,7 +1262,7 @@ you can add resource intensive styles.
     border-right: 1px solid #99999c; }
 
   /* =============================================================
-  	CONTENT STYLES
+  	POST STYLES
    * ============================================================= */
   .post-row {
     padding: 0; }
@@ -1364,10 +1343,6 @@ you can add resource intensive styles.
     border-left: 1px solid #99999c;
     border-right: 1px solid #99999c; }
 
-  .page-main {
-    border-left: 1px solid #99999c;
-    border-right: 1px solid #99999c; }
-
   .post-tag {
     background: none; }
     .post-tag .tag-name {
@@ -1391,6 +1366,13 @@ you can add resource intensive styles.
   .tag-handle:hover {
     background: #00ff00; }
 
+  /* =============================================================
+  	PAGE STYLES
+   * ============================================================= */
+  .page-main {
+    border-left: 1px solid #99999c;
+    border-right: 1px solid #99999c; }
+
   .page-content {
     float: left;
     display: block;
@@ -1412,16 +1394,14 @@ LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
 */
 @media only screen and (min-width: 1240px) {
-  /******************************************************************
-  Site Name: 
-  Author: 
+  /* =============================================================
   
   Stylesheet: Super Large Monitor Stylesheet
   
   You can add some advanced styles here if you like. This kicks in
   on larger screens.
   
-  ******************************************************************/ }
+   * ============================================================= */ }
 /*
 PRINT STYLESHEET
 
@@ -1480,15 +1460,3 @@ PRINT STYLESHEET
   /*  Avoid inserting a page break inside table rows and images */
   tr, img {
     page-break-inside: avoid; } }
-/* Add tag-specific styles here
-
-.tag-ipsum {
-	.post-image {
-		border-top: 2px solid #ff0000;
-	}
-	.post-tag {
-		background: #ff0000;
-	}
-}
-
-*/

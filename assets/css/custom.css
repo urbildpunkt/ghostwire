@@ -1,0 +1,12 @@
+/* =============================================================
+	Custom Stylesheet
+
+Here's where you can add your custom css overrides.
+
+ * ============================================================= */
+
+ #blog-header 
+	h1:after {
+		content: ': News';
+		color: #99999c;
+	}

@@ -28,6 +28,9 @@
         <link rel="stylesheet" href="/assets/css/ghostwire.css" type="text/css">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
+        <!-- Include custom CSS -->
+        <link rel="stylesheet" id="custom-stylesheet-css" href="/assets/css/custom.css" type="text/css" media="all">
+
         {{! Ghost outputs important style and meta data with this tag }}
         {{ghost_head}}
 
@@ -68,17 +71,7 @@
 
         <footer id="blog-footer">
             <aside class="share-header">
-                <a href="#" target="_blank"><button class="btn btn-secondary twitter"><i class="fa fa-fw fa-twitter"></i></button></a>
-                <a href="#" target="_blank"><button class="btn btn-secondary facebook"><i class="fa fa-fw fa-facebook"></i></button></a>
-                <a href="#" target="_blank"><button class="btn btn-secondary google-plus"><i class="fa fa-fw fa-google-plus"></i></button>
-                <a href="#" target="_blank"><button class="btn btn-secondary linkedin"><i class="fa fa-fw fa-linkedin"></i></button></a>
-                <a href="#" target="_blank"><button class="btn btn-secondary pinterest"><i class="fa fa-fw fa-pinterest"></i></button></a>
-                <a href="#" target="_blank"><button class="btn btn-secondary instagram"><i class="fa fa-fw fa-instagram"></i></button></a>
-                <a href="#" target="_blank"><button class="btn btn-secondary flickr"><i class="fa fa-fw fa-flickr"></i></button></a>
-                <a href="#" target="_blank"><button class="btn btn-secondary youtube"><i class="fa fa-fw fa-youtube-play"></i></button></a>
-                <a href="#" target="_blank"><button class="btn btn-secondary vimeo"><i class="fa fa-fw fa-vimeo-square"></i></button></a>
-                <a href="#" target="_blank"><button class="btn btn-secondary tumblr"><i class="fa fa-fw fa-tumblr"></i></button></a>
-                <a href="{{@blog.url}}/rss/" target="_blank"><button class="btn btn-secondary rss"><i class="fa fa-fw fa-rss"></i></button></a>
+            {{> social-buttons}}
             </aside>
 
             <section class="inner-footer">
@@ -94,12 +87,16 @@
         <!-- Javascript -->
         <!-- In the footer for better performance -->
         <script src="/assets/js/ghostwire.js"></script>
+        <script src="/assets/js/jquery.fitvids.js"></script>
 
         <!-- Init RSS Feed for Recent Stories Widget -->
         <script>
+         // FitVids
+        $(".content").fitVids();
+
         jQuery(document).ready(function($) {
             var responsive_viewport = $(window).width();
-            
+
             if (responsive_viewport >= 768) {
 
                 $('#recent-posts').FeedEk({

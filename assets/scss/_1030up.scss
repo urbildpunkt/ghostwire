@@ -7,16 +7,10 @@ be seen on the Desktop.
  * ============================================================= */
 
 
-
-/* =============================================================
-	GENERAL STYLES
- * ============================================================= */
-
-
-
 /* =============================================================
 	HEADER STYLES
  * ============================================================= */
+
 
 #blog-header {
 
@@ -33,8 +27,9 @@ be seen on the Desktop.
 	}
 }
 
+
 /* =============================================================
-	CONTENT STYLES
+	POST STYLES
  * ============================================================= */
 
 
@@ -111,11 +106,6 @@ be seen on the Desktop.
 	border-right: 1px solid $light-border;
 }
 
-.page-main {
-	border-left: 1px solid $light-border;
-	border-right: 1px solid $light-border;
-}
-
 .post-tag {
 	background: none;
 	.tag-name {
@@ -144,6 +134,16 @@ be seen on the Desktop.
 
 .tag-handle:hover {
 	background: #00ff00;
+}
+
+
+/* =============================================================
+	PAGE STYLES
+ * ============================================================= */
+
+.page-main {
+	border-left: 1px solid $light-border;
+	border-right: 1px solid $light-border;
 }
 
 .page-content {

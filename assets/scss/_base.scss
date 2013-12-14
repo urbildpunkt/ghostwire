@@ -1,4 +1,4 @@
-/******************************************************************
+/* =============================================================
 
 Stylesheet: Base Mobile Stylesheet
 
@@ -7,7 +7,7 @@ loaded by mobile devices. You want to keep it as minimal as
 possible. This is called at the top of the main stylsheet
 and will be used across all viewports.
 
-******************************************************************/
+ * ============================================================= */
 
 
 
@@ -15,13 +15,16 @@ and will be used across all viewports.
 	GENERAL STYLES
  * ============================================================= */
 
+
 body {
 	background: $color-bg;
 }
 
+
 /* =============================================================
 	HEADER STYLES
  * ============================================================= */
+
 
 #blog-header {
 	@include row();
@@ -93,19 +96,13 @@ body {
 		padding-left: 5px;
 	}
 
-	h1:after {
-		content: ': News';
-		color: $light-border;
-	}
 }
+
 
 /* =============================================================
-	CONTENT STYLES
+	POST STYLES
  * ============================================================= */
 
-.content {
-	
-}
 
 #featured-content {
 	@include row();
@@ -173,6 +170,58 @@ body {
 	}
 }
 
+.post-tag {
+	display: inline-block;
+	height: 24px;
+	position: absolute;
+	top: 20px;
+	left: -2px;
+	font-size: 0.626em;
+	font-weight: 300;
+	color: $color-white;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 5px 10px;
+	background: rgba(0,0,0,0.9);
+	border-left: 2px solid $dark-border;
+}
+
+
+.post-tag:nth-child(2){
+	top: 50px;
+}
+
+.post-tag:nth-child(3){
+	top: 80px;
+}
+
+.post-tag:nth-child(4){
+	top: 110px;
+}
+
+.post-tag:nth-child(5){
+	top: 140px;
+}
+
+
+.post-tag:nth-child(1n+6){
+	display: none;
+}
+
+.post-title {
+	margin-bottom: .1em;
+}
+
+.post-meta {
+	display: block;
+	font-size: .75em;
+	font-weight: 300;
+	letter-spacing: .1em;
+	color: $light-border;
+	text-transform: uppercase;
+	margin-bottom: .5em;
+}
+
 #pagination {
 	@include outer-container();
 	background: $color-white;
@@ -223,57 +272,11 @@ body {
 	left: 0;
 }
 
-.post-tag {
-	display: inline-block;
-	height: 24px;
-	position: absolute;
-	top: 20px;
-	left: -2px;
-	font-size: 0.626em;
-	font-weight: 300;
-	color: $color-white;
-	text-transform: uppercase;
-	text-align: center;
-	padding: 5px 10px;
-	background: rgba(0,0,0,0.9);
-	border-left: 2px solid $dark-border;
-}
 
+/* =============================================================
+	PAGE STYLES
+ * ============================================================= */
 
-.post-tag:nth-child(2){
-	top: 50px;
-}
-
-.post-tag:nth-child(3){
-	top: 80px;
-}
-
-.post-tag:nth-child(4){
-	top: 110px;
-}
-
-.post-tag:nth-child(5){
-	top: 140px;
-}
-
-
-.post-tag:nth-child(1n+6){
-	display: none;
-}
-
-.post-title {
-	margin-bottom: .1em;
-}
-
-.post-meta, .page-meta {
-	display: block;
-	font-size: .75em;
-	font-weight: 300;
-	letter-spacing: .1em;
-	color: $light-border;
-	text-transform: uppercase;
-	margin-bottom: .5em;
-}
 
 .page-main {
 	@include outer-container();
@@ -284,6 +287,10 @@ body {
 	@include span-columns(12);
 	text-align: center;
 	padding: 100px 0;
+}
+
+.page-meta {
+	@extend .post-meta;
 }
 
 .page-tag {
@@ -312,6 +319,9 @@ body {
 	padding-top: 20px;	
 	background: $color-white;
 	border-top: 1px solid $dark-border;
+	a {
+		font-weight: 700;
+	}
 }
 
 .page-sidebar {
@@ -380,6 +390,12 @@ body {
 	display: none;
 }
 
+
+/* =============================================================
+	SOCIAL LINK STYLES
+ * ============================================================= */
+
+
 .twitter {
 	background: #41b7d8;
 	border-color: #41b7d8;
@@ -435,9 +451,11 @@ body {
 	border-color: $light-border;
 }
 
+
 /* =============================================================
 	FOOTER STYLES
  * ============================================================= */
+
 
 #blog-footer {
 	@include outer-container();
