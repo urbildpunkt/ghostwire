@@ -18,6 +18,21 @@ be seen on the Desktop.
 	HEADER STYLES
  * ============================================================= */
 
+#blog-header {
+
+	.inner-header {
+		border-left: 1px solid lighten( $light-border, 30% );
+		border-right: 1px solid lighten( $light-border, 30% );
+	}
+}
+
+.content {
+	.post-row {
+		border-left: 1px solid $light-border;
+		border-right: 1px solid $light-border;
+	}
+}
+
 /* =============================================================
 	CONTENT STYLES
  * ============================================================= */
@@ -91,6 +106,16 @@ be seen on the Desktop.
 	}
 }
 
+.top-stories {
+	border-left: 1px solid $light-border;
+	border-right: 1px solid $light-border;
+}
+
+.page-main {
+	border-left: 1px solid $light-border;
+	border-right: 1px solid $light-border;
+}
+
 .post-tag {
 	background: none;
 	.tag-name {
@@ -123,4 +148,15 @@ be seen on the Desktop.
 
 .page-content {
 	@include span-columns(9);
+}
+
+#pagination {
+	border-left: 1px solid $light-border;
+	border-right: 1px solid $light-border;
+}
+
+#blog-footer {
+	border-top: 1px solid $dark-border;
+	border-left: 1px solid $light-border;
+	border-right: 1px solid $light-border;
 }

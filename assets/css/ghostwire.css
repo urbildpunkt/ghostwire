@@ -805,6 +805,8 @@ body {
     display: table; }
   #featured-content:after {
     clear: both; }
+  #featured-content .post-row {
+    background: none; }
 
 #post-featured {
   margin-bottom: 30px; }
@@ -820,9 +822,7 @@ body {
   position: relative;
   height: 20px;
   padding-bottom: 40px;
-  background: white;
-  border-left: 1px solid #99999c;
-  border-right: 1px solid #99999c; }
+  background: white; }
   .top-stories:before, .top-stories:after {
     content: " ";
     display: table; }
@@ -845,7 +845,8 @@ body {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  padding: 2.35765%; }
+  padding: 2.35765%;
+  background: white; }
   .post-row:before, .post-row:after {
     content: " ";
     display: table; }
@@ -876,9 +877,7 @@ body {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  background: white;
-  border-left: 1px solid #99999c;
-  border-right: 1px solid #99999c; }
+  background: white; }
   #pagination:before, #pagination:after {
     content: " ";
     display: table; }
@@ -978,7 +977,8 @@ body {
   *zoom: 1;
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background: white; }
   .page-main:before, .page-main:after {
     content: " ";
     display: table; }
@@ -1021,9 +1021,7 @@ body {
   margin-top: -60px;
   padding-top: 20px;
   background: white;
-  border-top: 1px solid #333333;
-  border-left: 1px solid #99999c;
-  border-right: 1px solid #99999c; }
+  border-top: 1px solid #333333; }
   .page-content:last-child {
     margin-right: 0; }
 
@@ -1134,9 +1132,7 @@ body {
   margin-right: auto;
   text-align: center;
   background: #d5d5d5;
-  border-top: 1px solid #333333;
-  border-left: 1px solid #99999c;
-  border-right: 1px solid #99999c; }
+  border-top: 1px solid #333333; }
   #blog-footer:before, #blog-footer:after {
     content: " ";
     display: table; }
@@ -1186,23 +1182,12 @@ tweeners.
     *zoom: 1;
     max-width: 68em;
     margin-left: auto;
-    margin-right: auto;
-    border-left: 1px solid #e7e7e7;
-    border-right: 1px solid #e7e7e7; }
+    margin-right: auto; }
     #blog-header .inner-header:before, #blog-header .inner-header:after {
       content: " ";
       display: table; }
     #blog-header .inner-header:after {
-      clear: both; }
-
-  .content .post-row {
-    background: white;
-    border-left: 1px solid #99999c;
-    border-right: 1px solid #99999c; }
-
-  #featured-content .post-row {
-    background: none;
-    border: none; } }
+      clear: both; } }
 /*
 TABLET & SMALLER LAPTOPS
 This is the average viewing window. So Desktops, Laptops, and
@@ -1223,29 +1208,8 @@ you can add resource intensive styles.
   /* =============================================================
   	CONTENT STYLES
    * ============================================================= */
-  .page-main {
-    background: white;
-    border-left: 1px solid #99999c;
-    border-right: 1px solid #99999c; }
-
-  .page-header {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 82.94039%; }
-    .page-header:last-child {
-      margin-right: 0; }
-
-  .page-content {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%; }
-    .page-content:last-child {
-      margin-right: 0; }
-
-  .page-sidebar {
-    display: inline; }
+  #featured-content .post-row {
+    border: none; }
 
   .post {
     float: left;
@@ -1261,6 +1225,27 @@ you can add resource intensive styles.
       width: 40.29137%; }
       .post .post-image:last-child {
         margin-right: 0; }
+
+  .page-header {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%; }
+    .page-header:last-child {
+      margin-right: 0; }
+
+  .page-content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    border-left: 1px solid #99999c;
+    border-right: 1px solid #99999c; }
+    .page-content:last-child {
+      margin-right: 0; }
+
+  .page-sidebar {
+    display: inline; }
 
   .share .btn {
     margin-right: 10px; }
@@ -1287,6 +1272,14 @@ you can add resource intensive styles.
   /* =============================================================
   	HEADER STYLES
    * ============================================================= */
+  #blog-header .inner-header {
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7; }
+
+  .content .post-row {
+    border-left: 1px solid #99999c;
+    border-right: 1px solid #99999c; }
+
   /* =============================================================
   	CONTENT STYLES
    * ============================================================= */
@@ -1365,6 +1358,14 @@ you can add resource intensive styles.
         max-width: 500px;
         width: auto; }
 
+  .top-stories {
+    border-left: 1px solid #99999c;
+    border-right: 1px solid #99999c; }
+
+  .page-main {
+    border-left: 1px solid #99999c;
+    border-right: 1px solid #99999c; }
+
   .post-tag {
     background: none; }
     .post-tag .tag-name {
@@ -1394,7 +1395,16 @@ you can add resource intensive styles.
     margin-right: 2.35765%;
     width: 74.41059%; }
     .page-content:last-child {
-      margin-right: 0; } }
+      margin-right: 0; }
+
+  #pagination {
+    border-left: 1px solid #99999c;
+    border-right: 1px solid #99999c; }
+
+  #blog-footer {
+    border-top: 1px solid #333333;
+    border-left: 1px solid #99999c;
+    border-right: 1px solid #99999c; } }
 /*
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.

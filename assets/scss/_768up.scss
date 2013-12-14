@@ -15,33 +15,12 @@ come into play. Have fun!
 	CONTENT STYLES
  * ============================================================= */
  
- #blog-header {
 
-	.side-header {
-		
+
+#featured-content {
+	.post-row {
+		border: none;
 	}
-
-	.inner-header {
-		
-	}
-}
-
-.page-main {
-	background: $color-white;
-	border-left: 1px solid $light-border;
-	border-right: 1px solid $light-border;
-}
-
-.page-header {
-	@include span-columns(10);
-}
-
-.page-content {
-	@include span-columns(8);
-}
-
-.page-sidebar {
-	display: inline;
 }
 
 .post {
@@ -52,6 +31,23 @@ come into play. Have fun!
 	}
 
 }
+
+
+
+.page-header {
+	@include span-columns(10);
+}
+
+.page-content {
+	@include span-columns(8);
+	border-left: 1px solid $light-border;
+	border-right: 1px solid $light-border;
+}
+
+.page-sidebar {
+	display: inline;
+}
+
 
 .share {
 	.btn {

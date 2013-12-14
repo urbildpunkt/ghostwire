@@ -22,23 +22,6 @@ upon your base.scss styles.
 
 	.inner-header {
 		@include outer-container();
-		border-left: 1px solid lighten( $light-border, 30% );
-		border-right: 1px solid lighten( $light-border, 30% );
-	}
-}
-
-.content {
-	.post-row {
-		background: $color-white;
-		border-left: 1px solid $light-border;
-		border-right: 1px solid $light-border;
-	}
-}
-
-#featured-content {
-	.post-row {
-		background: none;
-		border: none;
 	}
 }
 

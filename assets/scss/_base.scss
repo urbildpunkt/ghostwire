@@ -113,6 +113,9 @@ body {
 	background-size: cover;
     background-position: center center;
     border-bottom: 1px solid $light-border;
+    .post-row {
+    	background: none;
+    }
 }
 
 #post-featured { 
@@ -129,8 +132,6 @@ body {
 	height: 20px;
 	padding-bottom: 40px;
 	background: $color-white;
-	border-left: 1px solid $light-border;
-	border-right: 1px solid $light-border;
 }
 
 .section-header {
@@ -148,6 +149,7 @@ body {
 .post-row {
 	@include outer-container();
 	@include pad();
+	background: $color-white;
 }
 
 .post {
@@ -174,8 +176,6 @@ body {
 #pagination {
 	@include outer-container();
 	background: $color-white;
-	border-left: 1px solid $light-border;
-	border-right: 1px solid $light-border;
 }
 
 /* The main wrapper for our pagination links */
@@ -277,6 +277,7 @@ body {
 
 .page-main {
 	@include outer-container();
+	background: $color-white;
 }
 
 .page-header {
@@ -311,8 +312,6 @@ body {
 	padding-top: 20px;	
 	background: $color-white;
 	border-top: 1px solid $dark-border;
-	border-left: 1px solid $light-border;
-	border-right: 1px solid $light-border;
 }
 
 .page-sidebar {
@@ -444,8 +443,6 @@ body {
 	text-align: center;
 	background: $color-gray-light;
 	border-top: 1px solid $dark-border;
-	border-left: 1px solid $light-border;
-	border-right: 1px solid $light-border;
 
 	.share-header {
 		.btn {
