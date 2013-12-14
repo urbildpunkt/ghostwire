@@ -35,18 +35,17 @@ body {
 	border-top: 2px solid $dark-border;
 	border-bottom: 1px solid $light-border;
 
+	.branding {
+		float: left;
+	}
+
 	.side-header {
-		@include span-columns(12);
-		@include omega();
-		position: fixed;
-		bottom: 0;
-		right: 0;
-		margin-right:0px;
+		float: right;
+		width: 30px;
 		.top-link {
 			display: block;
 			width: 100%;
 			height: 50px;
-			border-top: 1px solid $dark-border;
 		}
 	}
 
@@ -60,7 +59,7 @@ body {
 		height: 0px;
 		border-left: 10px solid transparent;
 		border-right: 10px solid transparent;
-		border-bottom: 10px solid $color-black;
+		border-bottom: 10px solid $light-border;
 	}
 
 	.inner-header {
@@ -132,11 +131,6 @@ body {
 	background: $color-white;
 	border-left: 1px solid $light-border;
 	border-right: 1px solid $light-border;
-	.section-header {
-		position: absolute;
-		top: -1px;
-		padding-left: 20px;
-	}
 }
 
 .section-header {
@@ -144,8 +138,10 @@ body {
 	width: 160px;
 	font-size: 0.75em;
 	font-weight: 700;
+	text-align: center;
 	color: $dark-border;
 	text-transform: uppercase;
+	margin-top: -1px;
 	border-top: 1px solid $dark-border;
 }
 
@@ -284,7 +280,7 @@ body {
 }
 
 .page-header {
-	@include span-columns(10);
+	@include span-columns(12);
 	text-align: center;
 	padding: 100px 0;
 }
@@ -328,8 +324,7 @@ body {
 	display: inline-block;
 	position: relative;
 	top: -5px;
-	left: -15px;
-	padding-left: 20px;
+	left: -19px;
 }
 
 .feedEkList {
@@ -366,7 +361,79 @@ body {
 	text-transform: uppercase;
 }
 
+.post-share {
+	text-align: center;
+	border-top: 1px solid $light-border;
+	.btn {
+		margin-right: 20px;
+		@include transition (all .25s ease-in);
+	}
+}
 
+.post-comments {
+	margin-top: 20px;
+	border-top: 1px solid $light-border;
+}
+
+
+.social-title {
+	display: none;
+}
+
+.twitter {
+	background: #41b7d8;
+	border-color: #41b7d8;
+}
+
+.facebook {
+	background: #3b5997;
+	border-color: #3b5997;
+}
+
+.google-plus {
+	background: #d64937;
+	border-color: #d64937;
+}
+
+.linkedin {
+	background-color: #0073b2;
+	border-color: #0073b2;
+}
+
+.pinterest {
+	background-color: #cb2027;
+	border-color: #cb2027;
+}
+
+.instagram {
+	background-color:  #406e95;
+	border-color:  #406e95;
+}
+
+.flickr {
+	background-color: #FF0084;
+	border-color: #FF0084;
+}
+
+.youtube {
+	background-color: #FF3333;
+	border-color: #FF3333;
+}
+
+.vimeo {
+	background-color: #44bbff;
+	border-color: #44bbff;
+}
+
+.tumblr {
+	background-color: #2C4762;
+	border-color: #2C4762;
+}
+
+.rss {
+	background-color: $light-border;
+	border-color: $light-border;
+}
 
 /* =============================================================
 	FOOTER STYLES
@@ -374,17 +441,29 @@ body {
 
 #blog-footer {
 	@include outer-container();
+	text-align: center;
 	background: $color-gray-light;
-	border-top: 1px solid $light-border;
+	border-top: 1px solid $dark-border;
 	border-left: 1px solid $light-border;
 	border-right: 1px solid $light-border;
+
+	.share-header {
+		.btn {
+			margin-right: 10px;
+			margin-bottom: 10px;
+			@include transition (all .25s ease-in);
+		}
+	}
+
 	.inner-footer {
-		
+		clear: both;
+		text-align: center;
 	}
 
 	.copyright {
-		font-size: .75em;
+		font-size: 0.75em;
+		font-weight: 700;
 		text-align: center;
-		padding-top: 20px;
+		padding: 10px 0;
 	}
 }

@@ -26,6 +26,7 @@
 
         <!-- stylesheet -->
         <link rel="stylesheet" href="/assets/css/ghostwire.css" type="text/css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
         {{! Ghost outputs important style and meta data with this tag }}
         {{ghost_head}}
@@ -53,20 +54,36 @@
                     {{#if @blog.logo}}<figure style="background-image: url({{@blog.logo}})" alt="Logo" class="blog-logo"></figure>{{/if}}
                     <h1 class="blog-title">{{@blog.title}}</h1>
                 </a>
-
+                                
                 <aside class="side-header">
                     <a class="top-link"><figure class="arrow"></figure></a>
                 </aside>
+
             </section>
         </header>
 
-
+ 
         {{{body}}}
    
 
         <footer id="blog-footer">
+            <aside class="share-header">
+                <a href="#" target="_blank"><button class="btn btn-secondary twitter"><i class="fa fa-fw fa-twitter"></i></button></a>
+                <a href="#" target="_blank"><button class="btn btn-secondary facebook"><i class="fa fa-fw fa-facebook"></i></button></a>
+                <a href="#" target="_blank"><button class="btn btn-secondary google-plus"><i class="fa fa-fw fa-google-plus"></i></button>
+                <a href="#" target="_blank"><button class="btn btn-secondary linkedin"><i class="fa fa-fw fa-linkedin"></i></button></a>
+                <a href="#" target="_blank"><button class="btn btn-secondary pinterest"><i class="fa fa-fw fa-pinterest"></i></button></a>
+                <a href="#" target="_blank"><button class="btn btn-secondary instagram"><i class="fa fa-fw fa-instagram"></i></button></a>
+                <a href="#" target="_blank"><button class="btn btn-secondary flickr"><i class="fa fa-fw fa-flickr"></i></button></a>
+                <a href="#" target="_blank"><button class="btn btn-secondary youtube"><i class="fa fa-fw fa-youtube-play"></i></button></a>
+                <a href="#" target="_blank"><button class="btn btn-secondary vimeo"><i class="fa fa-fw fa-vimeo-square"></i></button></a>
+                <a href="#" target="_blank"><button class="btn btn-secondary tumblr"><i class="fa fa-fw fa-tumblr"></i></button></a>
+                <a href="#" target="_blank"><button class="btn btn-secondary rss"><i class="fa fa-fw fa-rss"></i></button></a>
+            </aside>
+
             <section class="inner-footer">
-                <p class="copyright">© {{@blog.title}}</p>
+                 <section class="copyright">&copy; 2013 <a href="/">{{@blog.title}}</a> &bull; All rights reserved.
+             <br class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghostwire</a>.</section>
             </section>
         </footer>
 

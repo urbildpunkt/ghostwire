@@ -16,20 +16,8 @@ upon your base.scss styles.
 ******************************************************************/
 
 #blog-header {
-	.branding {
-		@include span-columns(10);
-	}
 	.side-header {
-		@include span-columns(2);
-		position: relative;
-		.top-link {
-			border-top: none;
-			background: none;
-		}
-	}
-
-	.arrow {
-		border-bottom: 10px solid $light-border;
+		width: 100px
 	}
 
 	.inner-header {

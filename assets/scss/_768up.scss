@@ -32,6 +32,10 @@ come into play. Have fun!
 	border-right: 1px solid $light-border;
 }
 
+.page-header {
+	@include span-columns(10);
+}
+
 .page-content {
 	@include span-columns(8);
 }
@@ -47,4 +51,14 @@ come into play. Have fun!
 		@include span-columns(5);
 	}
 
+}
+
+.share {
+	.btn {
+		margin-right: 10px;
+	}
+}
+
+.social-title {
+	display: inline;
 }

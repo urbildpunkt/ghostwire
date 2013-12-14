@@ -49,8 +49,8 @@ jQuery(document).ready(function($) {
     if (responsive_viewport >= 768) {
 
         $('#recent-posts').FeedEk({
-            FeedUrl: 'http://urbildpunkt.apps.runkite.com/rss/',
-            MaxCount: 5,
+            FeedUrl: '/rss/',
+            MaxCount: 10,
             ShowDesc: false,
             ShowPubDate: true,
             DescCharacterLimit: 150
@@ -145,7 +145,7 @@ jQuery(document).ready(function($) {
             ShowDesc: true,
             ShowPubDate: true,
             CharacterLimit: 0,
-            TitleLinkTarget: "_blank"
+            TitleLinkTarget: "_self"
         }, opt);
 
         var id = $(this).attr("id");
