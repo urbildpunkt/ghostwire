@@ -97,14 +97,20 @@
 
         <!-- Init RSS Feed for Recent Stories Widget -->
         <script>
-        if (responsive_viewport >= 768) {
+        jQuery(document).ready(function($) {
+            var responsive_viewport = $(window).width();
+            
+            if (responsive_viewport >= 768) {
 
-        $('#recent-posts').FeedEk({
-            FeedUrl: '{{@blog.url}}/rss/',
-            MaxCount: 10,
-            ShowDesc: false,
-            ShowPubDate: true,
-            DescCharacterLimit: 150
+                $('#recent-posts').FeedEk({
+                    FeedUrl: '{{@blog.url}}/rss/',
+                    MaxCount: 10,
+                    ShowDesc: false,
+                    ShowPubDate: true,
+                    DescCharacterLimit: 150
+                });
+             }
+
         });
         </script>
 
