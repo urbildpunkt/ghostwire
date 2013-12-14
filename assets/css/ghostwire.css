@@ -1066,6 +1066,7 @@ body {
   text-align: center;
   border-top: 1px solid #99999c; }
   .post-share .btn {
+    margin-top: 10px;
     margin-right: 20px;
     -webkit-transition: all 0.25s ease-in;
     -moz-transition: all 0.25s ease-in;
@@ -1073,6 +1074,7 @@ body {
 
 .post-comments {
   margin-top: 20px;
+  padding-bottom: 40px;
   border-top: 1px solid #99999c; }
 
 .social-title {

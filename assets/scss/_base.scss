@@ -364,6 +364,7 @@ body {
 	text-align: center;
 	border-top: 1px solid $light-border;
 	.btn {
+		margin-top: 10px;
 		margin-right: 20px;
 		@include transition (all .25s ease-in);
 	}
@@ -371,9 +372,9 @@ body {
 
 .post-comments {
 	margin-top: 20px;
+	padding-bottom: 40px;
 	border-top: 1px solid $light-border;
 }
-
 
 .social-title {
 	display: none;
