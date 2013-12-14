@@ -48,14 +48,6 @@ jQuery(document).ready(function($) {
     /* if is above or equal to 768px */
     if (responsive_viewport >= 768) {
 
-        $('#recent-posts').FeedEk({
-            FeedUrl: '/rss/',
-            MaxCount: 10,
-            ShowDesc: false,
-            ShowPubDate: true,
-            DescCharacterLimit: 150
-        });
-
         /* load gravatars */
         $('.comment img[data-gravatar]').each(function(){
             $(this).attr('src',$(this).attr('data-gravatar'));
