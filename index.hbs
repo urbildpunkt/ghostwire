@@ -19,19 +19,22 @@
                     </a>
                 </section>
 
-                <header class="post-header">
-                    {{#if tags}}{{#each tags}} 
-                    <span class="post-tag"><span class="tag-name">{{this.name}}</span></span>
-                    {{/each}}{{/if}}
+                <section class="post-content">
+                    <header class="post-header">
+                        {{#if tags}}{{#each tags}} 
+                        <span class="post-tag"><span class="tag-name">{{this.name}}</span></span>
+                        {{/each}}{{/if}}
 
-                    <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+                        <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
 
-                    <span class="post-meta">{{author.name}} | <time datetime="{{date format='YYYY-MM-DD'}}">{{date published_at format="MMMM DD, YYYY"}}</time></span>
-                </header>
+                        <span class="post-meta">{{author.name}} | <time datetime="{{date format='YYYY-MM-DD'}}">{{date published_at format="MMMM DD, YYYY"}}</time></span>
+                    </header>
 
-                <section class="post-excerpt">
-                    <p>{{excerpt words="50"}}&hellip;</p>
+                    <section class="post-excerpt">
+                        <p>{{excerpt words="50"}}&hellip;</p>
+                    </section>
                 </section>
+
             </article>
 
         </section>
@@ -55,7 +58,7 @@
                     {{content words="0"}}
                 </a>
             </section>
-
+            <section class="post-content">
             <header class="post-header">
                 {{#if tags}}{{#each tags}} 
                 <span class="post-tag"><span class="tag-name">{{this.name}}</span></span>
@@ -69,6 +72,7 @@
             <section class="post-excerpt">
                 <p>{{excerpt words="30"}}&hellip;</p>
             </section>
+        </section>
         </article>
 
 {{/if}}

@@ -714,14 +714,14 @@ body {
   left: 0;
   z-index: 100000;
   margin: auto;
-  background: #f6f6f6;
-  border-top: 2px solid #333333;
-  border-bottom: 1px solid #99999c; }
+  background: rgba(0, 0, 0, 0.9); }
   #blog-header:before, #blog-header:after {
     content: " ";
     display: table; }
   #blog-header:after {
     clear: both; }
+  #blog-header a {
+    color: white; }
   #blog-header .branding {
     float: left; }
   #blog-header .side-header {
@@ -741,10 +741,10 @@ body {
     height: 0px;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid #99999c; }
+    border-bottom: 10px solid #999999; }
   #blog-header .inner-header {
     height: 50px;
-    background: white; }
+    background: rgba(0, 0, 0, 0.6); }
   #blog-header .branding {
     display: inline-block;
     height: 50px;
@@ -769,17 +769,14 @@ body {
 #featured-content {
   *zoom: 1;
   display: block;
-  background: #d5d5d5;
+  background: #333333;
   background-size: cover;
-  background-position: center center;
-  border-bottom: 1px solid #99999c; }
+  background-position: center center; }
   #featured-content:before, #featured-content:after {
     content: " ";
     display: table; }
   #featured-content:after {
     clear: both; }
-  #featured-content .post-row {
-    background: none; }
 
 #post-featured {
   margin-bottom: 30px; }
@@ -793,16 +790,17 @@ body {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  height: 20px;
-  padding-bottom: 40px;
-  background: white; }
+  padding-top: 20px;
+  margin-bottom: 20px;
+  background: white;
+  border-bottom: 2px solid #999999; }
   .top-stories:before, .top-stories:after {
     content: " ";
     display: table; }
   .top-stories:after {
     clear: both; }
 
-.section-header, .recent-header {
+.section-header {
   display: block;
   width: 160px;
   font-size: 0.75em;
@@ -810,16 +808,15 @@ body {
   text-align: center;
   color: #333333;
   text-transform: uppercase;
-  margin-top: -1px;
-  border-top: 1px solid #333333; }
+  margin-bottom: -2px;
+  border-bottom: 2px solid #333333; }
 
 .post-row {
   *zoom: 1;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  padding: 2.35765%;
-  background: white; }
+  padding: 2.35765%; }
   .post-row:before, .post-row:after {
     content: " ";
     display: table; }
@@ -833,11 +830,12 @@ body {
   width: 100%;
   position: relative;
   font-size: 0.938em;
+  margin: 20px 0;
   background: white; }
   .post:last-child {
     margin-right: 0; }
-  .post .post-image {
-    margin-bottom: 1.5em; }
+  .post .post-image p {
+    margin-bottom: -.4em; }
   .post .post-header {
     padding-left: 10px; }
   .post .post-excerpt {
@@ -858,7 +856,7 @@ body {
   text-align: center;
   padding: 5px 10px;
   background: rgba(0, 0, 0, 0.9);
-  border-left: 2px solid #333333; }
+  border-left: 3px solid #333333; }
 
 .post-tag:nth-child(2) {
   top: 50px; }
@@ -883,21 +881,9 @@ body {
   font-size: .75em;
   font-weight: 300;
   letter-spacing: .1em;
-  color: #99999c;
+  color: #999999;
   text-transform: uppercase;
   margin-bottom: .5em; }
-
-#pagination {
-  *zoom: 1;
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  background: white; }
-  #pagination:before, #pagination:after {
-    content: " ";
-    display: table; }
-  #pagination:after {
-    clear: both; }
 
 /* The main wrapper for our pagination links */
 #pagination {
@@ -917,8 +903,7 @@ body {
   position: relative;
   font-size: .75em;
   text-align: center;
-  padding: 20px 0;
-  border-top: 1px solid #e7e7e7; }
+  padding: 20px 0; }
   .pagination:before, .pagination:after {
     content: " ";
     display: table; }
@@ -980,10 +965,10 @@ body {
   text-transform: uppercase;
   text-align: center;
   padding: 5px 10px;
-  background: rgba(0, 0, 0, 0.9);
-  border-left: 2px solid #333333; }
+  background: rgba(0, 0, 0, 0.9); }
 
 .page-title {
+  color: white;
   margin-bottom: .5em; }
 
 .page-content {
@@ -991,42 +976,45 @@ body {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  padding: 2.35765%;
   font-size: 0.938em;
-  margin-left: -1px;
   margin-top: -60px;
-  padding-top: 20px;
-  background: white;
-  border-top: 1px solid #333333; }
+  background: white; }
   .page-content:last-child {
     margin-right: 0; }
   .page-content a {
     font-weight: 700; }
 
+.inner-content {
+  padding: 2.35765%; }
+
 .page-sidebar {
   display: none; }
 
 .recent-header {
-  display: inline-block;
-  position: relative;
-  top: -5px;
-  left: -19px; }
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #999999; }
+  .recent-header .section-header {
+    display: inline-block;
+    position: relative;
+    bottom: -2px; }
 
 .feedEkList {
-  list-style-type: none; }
+  list-style-type: none;
+  background: #e7e7e2;
+  padding: 1px 0; }
 
 .feedEkList li a {
   display: block;
   width: 100%;
   padding: 10px 0;
-  border-top: 1px solid white;
-  border-bottom: 1px solid #e7e7e7; }
+  margin: 6px 0;
+  background: white; }
 
 .feedEkList li a:hover {
   color: #333333;
   text-decoration: none;
-  border-top: 1px solid #99999c;
-  border-bottom: 1px solid #99999c; }
+  background: #d5d5d5; }
 
 .itemTitle {
   font-size: .8em;
@@ -1037,23 +1025,22 @@ body {
   font-size: .75em;
   font-weight: 300;
   letter-spacing: .1em;
-  color: #99999c;
+  color: #999999;
   text-transform: uppercase; }
 
 .post-share {
-  text-align: center;
-  border-top: 1px solid #99999c; }
+  text-align: center; }
   .post-share .btn {
-    margin-top: 10px;
-    margin-right: 20px;
-    -webkit-transition: all 0.25s ease-in;
-    -moz-transition: all 0.25s ease-in;
-    transition: all 0.25s ease-in; }
+    margin-top: 30px;
+    margin-right: 20px; }
 
 .post-comments {
   margin-top: 20px;
-  padding-bottom: 40px;
-  border-top: 1px solid #99999c; }
+  padding-bottom: 40px; }
+
+.share-header, .comments-header {
+  display: block;
+  border-bottom: 2px solid #cbd2d6; }
 
 .social-title {
   display: none; }
@@ -1102,8 +1089,8 @@ body {
   border-color: #2C4762; }
 
 .rss {
-  background-color: #99999c;
-  border-color: #99999c; }
+  background-color: #999999;
+  border-color: #999999; }
 
 /* =============================================================
 	FOOTER STYLES
@@ -1115,18 +1102,15 @@ body {
   margin-right: auto;
   text-align: center;
   background: #d5d5d5;
-  border-top: 1px solid #333333; }
+  border-top: 2px solid #333333; }
   #blog-footer:before, #blog-footer:after {
     content: " ";
     display: table; }
   #blog-footer:after {
     clear: both; }
-  #blog-footer .share-header .btn {
+  #blog-footer .share-buttons .btn {
     margin-right: 10px;
-    margin-bottom: 10px;
-    -webkit-transition: all 0.25s ease-in;
-    -moz-transition: all 0.25s ease-in;
-    transition: all 0.25s ease-in; }
+    margin-bottom: 10px; }
   #blog-footer .inner-footer {
     clear: both;
     text-align: center; }
@@ -1202,8 +1186,15 @@ you can add resource intensive styles.
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 40.29137%; }
+      width: 48.82117%; }
       .post .post-image:last-child {
+        margin-right: 0; }
+    .post .post-content {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .post .post-content:last-child {
         margin-right: 0; }
 
   /* =============================================================
@@ -1222,8 +1213,7 @@ you can add resource intensive styles.
     display: block;
     margin-right: 2.35765%;
     width: 65.88078%;
-    border-left: 1px solid #99999c;
-    border-right: 1px solid #99999c; }
+    border-right: 2px solid #999999; }
     .page-content:last-child {
       margin-right: 0; }
 
@@ -1250,23 +1240,12 @@ you can add resource intensive styles.
   
    * ============================================================= */
   /* =============================================================
-  	HEADER STYLES
-   * ============================================================= */
-  #blog-header .inner-header {
-    border-left: 1px solid #e7e7e7;
-    border-right: 1px solid #e7e7e7; }
-
-  .content .post-row {
-    border-left: 1px solid #99999c;
-    border-right: 1px solid #99999c; }
-
-  /* =============================================================
   	POST STYLES
    * ============================================================= */
   .post-row {
     padding: 0; }
 
-  .post .post-header {
+  .post .post-content {
     margin-top: 4%; }
 
   #post-featured {
@@ -1274,13 +1253,7 @@ you can add resource intensive styles.
     display: block;
     margin-right: 2.35765%;
     width: 100%;
-    background: white;
-    border-top: 1px solid #cdcdce;
-    border-left: 1px solid #c0c0c2;
-    border-right: 1px solid #c0c0c2;
-    -moz-box-shadow: 0 1px 2px #c3c3c3;
-    -webkit-box-shadow: 0 1px 2px #c3c3c3;
-    box-shadow: 0 1px 2px #c3c3c3; }
+    background: white; }
     #post-featured:last-child {
       margin-right: 0; }
     #post-featured .post-image {
@@ -1303,15 +1276,21 @@ you can add resource intensive styles.
         height: 480px;
         max-width: 700px;
         width: auto; }
-    #post-featured .post-header {
-      margin-top: 8%; }
+    #post-featured .post-content {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 40.29137%;
+      padding: 2.35765%;
+      margin-top: 5%; }
+      #post-featured .post-content:last-child {
+        margin-right: 0; }
 
   #post-front {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%;
-    margin-bottom: 40px; }
+    width: 31.76157%; }
     #post-front:last-child {
       margin-right: 0; }
     #post-front:nth-child(3n) {
@@ -1337,10 +1316,14 @@ you can add resource intensive styles.
         height: 260px;
         max-width: 500px;
         width: auto; }
-
-  .top-stories {
-    border-left: 1px solid #99999c;
-    border-right: 1px solid #99999c; }
+    #post-front .post-content {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      height: 220px; }
+      #post-front .post-content:last-child {
+        margin-right: 0; }
 
   .post-tag {
     background: none; }
@@ -1368,26 +1351,13 @@ you can add resource intensive styles.
   /* =============================================================
   	PAGE STYLES
    * ============================================================= */
-  .page-main {
-    border-left: 1px solid #99999c;
-    border-right: 1px solid #99999c; }
-
   .page-content {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 74.41059%; }
     .page-content:last-child {
-      margin-right: 0; }
-
-  #pagination {
-    border-left: 1px solid #99999c;
-    border-right: 1px solid #99999c; }
-
-  #blog-footer {
-    border-top: 1px solid #333333;
-    border-left: 1px solid #99999c;
-    border-right: 1px solid #99999c; } }
+      margin-right: 0; } }
 /*
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.

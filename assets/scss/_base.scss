@@ -34,9 +34,11 @@ body {
 	left: 0;
 	z-index:100000;
 	margin:auto; 
-	background: #f6f6f6; 
-	border-top: 2px solid $dark-border;
-	border-bottom: 1px solid $light-border;
+	background: rgba(0,0,0,0.9); 
+
+	a {
+		color: $color-white;
+	}
 
 	.branding {
 		float: left;
@@ -67,7 +69,7 @@ body {
 
 	.inner-header {
 		height:50px;
-		background: $color-white;
+		background: rgba(0,0,0,0.6);
 	}
 
 	.branding {
@@ -105,13 +107,9 @@ body {
 
 #featured-content {
 	@include row();
-	background: $color-gray-light;
+	background: $dark-border;
 	background-size: cover;
     background-position: center center;
-    border-bottom: 1px solid $light-border;
-    .post-row {
-    	background: none;
-    }
 }
 
 #post-featured { 
@@ -125,9 +123,10 @@ body {
 .top-stories {
 	@include outer-container();
 	position: relative;
-	height: 20px;
-	padding-bottom: 40px;
+	padding-top: 20px;
+	margin-bottom: 20px;
 	background: $color-white;
+	border-bottom: 2px solid $light-border;
 }
 
 .section-header {
@@ -138,26 +137,26 @@ body {
 	text-align: center;
 	color: $dark-border;
 	text-transform: uppercase;
-	margin-top: -1px;
-	border-top: 1px solid $dark-border;
+	margin-bottom: -2px;
+	border-bottom: 2px solid $dark-border;
 }
 
 .post-row {
 	@include outer-container();
 	@include pad();
-	background: $color-white;
 }
 
 .post {
 	@include span-columns(12);
 	position: relative;
 	font-size: 0.938em;
+	margin: 20px 0;
 	background: $color-white;
-
 	.post-image {
-		margin-bottom: 1.5em;
+		p {
+			margin-bottom: -.4em;
+		}
 	}
-
 	.post-header {	
 		padding-left: 10px;
 	}
@@ -182,7 +181,7 @@ body {
 	text-align: center;
 	padding: 5px 10px;
 	background: rgba(0,0,0,0.9);
-	border-left: 2px solid $dark-border;
+	border-left: 3px solid $dark-border;
 }
 
 
@@ -221,11 +220,6 @@ body {
 	margin-bottom: .5em;
 }
 
-#pagination {
-	@include outer-container();
-	background: $color-white;
-}
-
 /* The main wrapper for our pagination links */
 #pagination {
 	@include outer-container();
@@ -237,7 +231,6 @@ body {
 	font-size: .75em;
 	text-align: center;
 	padding: 20px 0;
-	border-top: 1px solid lighten( $light-border, 30% );
 
 	a {
 		font-weight: 700;
@@ -302,25 +295,25 @@ body {
 	text-align: center;
 	padding: 5px 10px;
 	background: rgba(0,0,0,0.9);
-	border-left: 2px solid $dark-border;
 }
 
 .page-title {
+	color: $color-white;
 	margin-bottom: .5em;
 }
 
 .page-content {
 	@include span-columns(12);
-	@include pad();
 	font-size: 0.938em;
-	margin-left: -1px;
-	margin-top: -60px;
-	padding-top: 20px;	
+	margin-top: -60px;	
 	background: $color-white;
-	border-top: 1px solid $dark-border;
 	a {
 		font-weight: 700;
 	}
+}
+
+.inner-content {
+	@include pad();
 }
 
 .page-sidebar {
@@ -328,31 +321,34 @@ body {
 }
 
 .recent-header {
-	@extend .section-header;
-	display: inline-block;
-	position: relative;
-	top: -5px;
-	left: -19px;
+	display: block;
+	width: 100%;
+	border-bottom: 2px solid $light-border;
+	.section-header {
+		display: inline-block;
+		position: relative;
+		bottom: -2px;
+	}
 }
 
 .feedEkList {
 	list-style-type: none;
-	
+	background: $color-bg;
+	padding: 1px 0;
 }
 
 .feedEkList li a {
 	display: block;
 	width: 100%;
 	padding: 10px 0;
-	border-top: 1px solid $color-white;
-	border-bottom: 1px solid lighten( $light-border, 30% );
+	margin: 6px 0;
+	background: $color-white;
 }
 
 .feedEkList li a:hover {
 	color: $dark-border;
 	text-decoration: none;
-	border-top: 1px solid $light-border;
-	border-bottom: 1px solid $light-border;
+	background: $color-gray-light;
 }
 
 .itemTitle {
@@ -371,18 +367,20 @@ body {
 
 .post-share {
 	text-align: center;
-	border-top: 1px solid $light-border;
 	.btn {
-		margin-top: 10px;
+		margin-top: 30px;
 		margin-right: 20px;
-		@include transition (all .25s ease-in);
 	}
 }
 
 .post-comments {
 	margin-top: 20px;
 	padding-bottom: 40px;
-	border-top: 1px solid $light-border;
+}
+
+.share-header, .comments-header {
+	display: block;
+	border-bottom: 2px solid #cbd2d6;
 }
 
 .social-title {
@@ -451,6 +449,7 @@ body {
 }
 
 
+
 /* =============================================================
 	FOOTER STYLES
  * ============================================================= */
@@ -460,13 +459,12 @@ body {
 	@include outer-container();
 	text-align: center;
 	background: $color-gray-light;
-	border-top: 1px solid $dark-border;
+	border-top: 2px solid $dark-border;
 
-	.share-header {
+	.share-buttons {
 		.btn {
 			margin-right: 10px;
 			margin-bottom: 10px;
-			@include transition (all .25s ease-in);
 		}
 	}
 

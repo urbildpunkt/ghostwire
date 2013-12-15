@@ -27,7 +27,10 @@ come into play. Have fun!
 	@include span-columns(12);
 
 	.post-image {
-		@include span-columns(5);
+		@include span-columns(6 of 12);
+	}
+	.post-content {
+		@include span-columns(6 of 12);
 	}
 
 }
@@ -44,8 +47,7 @@ come into play. Have fun!
 
 .page-content {
 	@include span-columns(8);
-	border-left: 1px solid $light-border;
-	border-right: 1px solid $light-border;
+	border-right: 2px solid $light-border;
 }
 
 .page-sidebar {

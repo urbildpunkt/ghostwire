@@ -8,27 +8,6 @@ be seen on the Desktop.
 
 
 /* =============================================================
-	HEADER STYLES
- * ============================================================= */
-
-
-#blog-header {
-
-	.inner-header {
-		border-left: 1px solid lighten( $light-border, 30% );
-		border-right: 1px solid lighten( $light-border, 30% );
-	}
-}
-
-.content {
-	.post-row {
-		border-left: 1px solid $light-border;
-		border-right: 1px solid $light-border;
-	}
-}
-
-
-/* =============================================================
 	POST STYLES
  * ============================================================= */
 
@@ -39,7 +18,7 @@ be seen on the Desktop.
 
 .post {
 
-	.post-header {
+	.post-content {
 			margin-top: 4%;
 		}
 }
@@ -47,12 +26,7 @@ be seen on the Desktop.
 #post-featured {
 	@include span-columns(12);
 	background: $color-white;
-	border-top: 1px solid lighten( $light-border, 20% );
-	border-left: 1px solid lighten( $light-border, 15% );
-	border-right: 1px solid lighten( $light-border, 15% );
-	-moz-box-shadow: 0 1px 2px #c3c3c3;
- -webkit-box-shadow: 0 1px 2px #c3c3c3;
-         box-shadow: 0 1px 2px #c3c3c3;
+
 	.post-image {
 		@include span-columns(7 of 12);
 			height: 435px;
@@ -72,15 +46,17 @@ be seen on the Desktop.
 		}
 	}
 
-	.post-header {
-			margin-top: 8%;
-		}
+	.post-content {
+		@include span-columns(5 of 12);
+		@include pad();
+		margin-top: 5%;
+	}
+
 }
 
 #post-front {
 	@include span-columns(4);
 	@include omega(3n);
-	margin-bottom: 40px; 
 
 	.post-image {
 		@include span-columns(12);
@@ -99,11 +75,11 @@ be seen on the Desktop.
 			width: auto;
 		}
 	}
-}
 
-.top-stories {
-	border-left: 1px solid $light-border;
-	border-right: 1px solid $light-border;
+	.post-content {
+		@include span-columns(12);
+		height: 220px;
+	}
 }
 
 .post-tag {
@@ -141,22 +117,6 @@ be seen on the Desktop.
 	PAGE STYLES
  * ============================================================= */
 
-.page-main {
-	border-left: 1px solid $light-border;
-	border-right: 1px solid $light-border;
-}
-
 .page-content {
 	@include span-columns(9);
-}
-
-#pagination {
-	border-left: 1px solid $light-border;
-	border-right: 1px solid $light-border;
-}
-
-#blog-footer {
-	border-top: 1px solid $dark-border;
-	border-left: 1px solid $light-border;
-	border-right: 1px solid $light-border;
 }

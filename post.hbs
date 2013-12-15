@@ -29,10 +29,12 @@
     <section class="page-main">
 
         <section class="page-content">
-            {{content}}
+            <section class="inner-content">
+                 {{content}}
+            </section>
 
             <section class="post-share">
-            <span class="section-header">Share</span>
+            <span class="share-header"><span class="section-header">Share</span></span>
             <a class="icon-twitter" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"
                 onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                 <span class="hidden"><button class="btn btn-secondary twitter"><i class="fa fa-fw pull-left fa-twitter"></i><span class="social-title"> Twitter</span></button></span>
@@ -52,16 +54,18 @@
             </section>
 
             <section class="post-comments">
-                <span class="section-header">Comment</span>
+                <span class="comments-header"><span class="section-header">Comment</span></span>
                 <br>
                 {{! Add the comments partial template (currently only Disqus comments) }}
+                <section class="inner-content">
                 {{> comments}}
+                </section>
             </section>
 
         </section>
 
         <aside class="page-sidebar">
-            <span class="recent-header">Recent Stories</span>
+            <span class="recent-header"><span class="section-header">Recent Stories</span></span>
             <figure id="recent-posts"></figure>
         </aside>
 

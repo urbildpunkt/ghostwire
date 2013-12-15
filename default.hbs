@@ -70,7 +70,7 @@
    
 
         <footer id="blog-footer">
-            <aside class="share-header">
+            <aside class="share-buttons">
             {{> social-buttons}}
             </aside>
 
@@ -100,7 +100,7 @@
             if (responsive_viewport >= 768) {
 
                 $('#recent-posts').FeedEk({
-                    FeedUrl: '{{@blog.url}}/rss/',
+                    FeedUrl: 'http://ghostwire.apps.runkite.com/rss/',
                     MaxCount: 10,
                     ShowDesc: false,
                     ShowPubDate: true,
