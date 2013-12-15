@@ -780,6 +780,8 @@ body {
 
 #post-featured {
   margin-bottom: 30px; }
+  #post-featured .post-tag {
+    border-color: #141414; }
 
 #post-first {
   padding-top: 80px; }
@@ -848,7 +850,7 @@ body {
   height: 24px;
   position: absolute;
   top: 20px;
-  left: -2px;
+  left: -4px;
   font-size: 0.626em;
   font-weight: 300;
   color: white;
@@ -856,7 +858,7 @@ body {
   text-align: center;
   padding: 5px 10px;
   background: rgba(0, 0, 0, 0.9);
-  border-left: 3px solid #333333; }
+  border-left: 4px solid #333333; }
 
 .post-tag:nth-child(2) {
   top: 50px; }

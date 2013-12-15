@@ -114,6 +114,9 @@ body {
 
 #post-featured { 
 	margin-bottom: 30px;
+	.post-tag {
+		border-color: #141414;
+	}
 }
 
 #post-first {
@@ -173,7 +176,7 @@ body {
 	height: 24px;
 	position: absolute;
 	top: 20px;
-	left: -2px;
+	left: -4px;
 	font-size: 0.626em;
 	font-weight: 300;
 	color: $color-white;
@@ -181,7 +184,7 @@ body {
 	text-align: center;
 	padding: 5px 10px;
 	background: rgba(0,0,0,0.9);
-	border-left: 3px solid $dark-border;
+	border-left: 4px solid $dark-border;
 }
 
 
