@@ -82,9 +82,17 @@ jQuery(document).ready(function($) {
     // way of checking if we're on a paginated page.)
     if (window.location.pathname.indexOf('page') === 1) {
         $('.post').removeAttr('id');
+        $('#featured-content').css('background', '');
         $('#featured-content').removeAttr('id');
         $('.top-stories').css( "display", "none" );
     }
+
+    var $featuredImage = $('.page-content img[alt="featured-header"]');
+      if ( $featuredImage.length ) {
+        var featuredImageURL = $featuredImage.attr('src');
+        $('#featured-content').css('background-image','url(' + featuredImageURL + ')');
+      }
+    $featuredImage.remove()
 
 
 }); /* end of as page load scripts */

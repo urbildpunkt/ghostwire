@@ -8,7 +8,7 @@
 
 {{#if @first}}
 {{! The newest, featured post }}
-<section class="content" id="featured-content">
+<section class="content" id="featured-content" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
 
         <section class="post-row"  id="post-first">
 
