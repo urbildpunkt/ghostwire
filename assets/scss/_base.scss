@@ -20,6 +20,10 @@ body {
 	background: $color-bg;
 }
 
+.container {
+	@include outer-container();
+	@include pad();
+}
 
 /* =============================================================
 	HEADER STYLES
@@ -311,6 +315,9 @@ body {
 	margin-top: -60px;	
 	background: $color-white;
 	a {
+		font-weight: 700;
+	}
+	h1, h2, h3, h4, h5, h6 {
 		font-weight: 700;
 	}
 }

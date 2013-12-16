@@ -1,6 +1,6 @@
 /* =============================================================
 	Ghostwire v1.0
-	by John Quealy http://urbildpunkt.com
+	by John Quealy http://urbildpunkt.c
 
 	Kraken v3.1
 	A lightweight front-end boilerplate by Chris Ferdinandi.
@@ -702,6 +702,18 @@ and will be used across all viewports.
 body {
   background: #e7e7e2; }
 
+.container {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.35765%; }
+  .container:before, .container:after {
+    content: " ";
+    display: table; }
+  .container:after {
+    clear: both; }
+
 /* =============================================================
 	HEADER STYLES
  * ============================================================= */
@@ -984,6 +996,8 @@ body {
   .page-content:last-child {
     margin-right: 0; }
   .page-content a {
+    font-weight: 700; }
+  .page-content h1, .page-content h2, .page-content h3, .page-content h4, .page-content h5, .page-content h6 {
     font-weight: 700; }
 
 .inner-content {
