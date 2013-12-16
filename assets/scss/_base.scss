@@ -1,11 +1,5 @@
 /* =============================================================
-
-Stylesheet: Base Mobile Stylesheet
-
-Be light and don't over style since everything here will be
-loaded by mobile devices. You want to keep it as minimal as
-possible. This is called at the top of the main stylsheet
-and will be used across all viewports.
+	 Base Mobile Stylesheet
 
  * ============================================================= */
 
@@ -51,6 +45,7 @@ body {
 	.side-header {
 		float: right;
 		width: 30px;
+
 		.top-link {
 			display: block;
 			width: 100%;
@@ -118,6 +113,7 @@ body {
 
 #post-featured { 
 	margin-bottom: 30px;
+
 	.post-tag {
 		border-color: #141414;
 	}
@@ -159,11 +155,14 @@ body {
 	font-size: 0.938em;
 	margin: 20px 0;
 	background: $color-white;
+
 	.post-image {
+
 		p {
 			margin-bottom: -.4em;
 		}
 	}
+
 	.post-header {	
 		padding-left: 10px;
 	}
@@ -314,9 +313,11 @@ body {
 	font-size: 0.938em;
 	margin-top: -60px;	
 	background: $color-white;
+
 	a {
 		font-weight: 700;
 	}
+
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 700;
 	}
@@ -334,6 +335,7 @@ body {
 	display: block;
 	width: 100%;
 	border-bottom: 2px solid $light-border;
+
 	.section-header {
 		display: inline-block;
 		position: relative;
@@ -377,6 +379,7 @@ body {
 
 .post-share {
 	text-align: center;
+
 	.btn {
 		margin-top: 30px;
 		margin-right: 20px;
@@ -472,6 +475,7 @@ body {
 	border-top: 2px solid $dark-border;
 
 	.share-buttons {
+		
 		.btn {
 			margin-right: 10px;
 			margin-bottom: 10px;

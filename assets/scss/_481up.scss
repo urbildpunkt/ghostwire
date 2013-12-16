@@ -1,11 +1,5 @@
 /* ============================================================= 
-
-Stylesheet: 481px and Up Stylesheet
-
-This stylesheet is loaded for larger devices. It's set to 
-481px because at 480px it would load on a landscaped iPhone.
-This isn't ideal because then you would be loading all those
-extra styles on that same mobile connection. 
+	481px and Up Stylesheet
 
  * ============================================================= */
 
@@ -16,6 +10,7 @@ extra styles on that same mobile connection.
 
 
 #blog-header {
+	
 	.side-header {
 		width: 100px
 	}

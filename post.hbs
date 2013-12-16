@@ -8,20 +8,18 @@
 
 <section class="content" id="featured-content">
 
-        <header class="page-header">
-            {{#if tags}}{{#each tags}} 
-            <span class="page-tag"><span class="tag-name">{{this.name}}</span></span>
-            {{/each}}{{/if}}
+    <header class="page-header">
+        {{#if tags}}{{#each tags}} 
+        <span class="page-tag"><span class="tag-name">{{this.name}}</span></span>
+        {{/each}}{{/if}}
 
-            <h1 class="page-title">{{{title}}}</h1>
+        <h1 class="page-title">{{{title}}}</h1>
 
-            <span class="page-meta">{{author.name}} | <time datetime="{{date format='YYYY-MM-DD'}}">{{date published_at format="MMMM DD, YYYY"}}</time></span>
-        </header>
+        <span class="page-meta">{{author.name}} | <time datetime="{{date format='YYYY-MM-DD'}}">{{date published_at format="MMMM DD, YYYY"}}</time></span>
+    </header>
 
 
 </section>
-    
-        {{! Everything below outputs content of the the post which has been published }}
         
 
 <section class="content">
@@ -54,7 +52,6 @@
             </section>
 
             {{> comments}}
-
         </section>
 
         <aside class="page-sidebar">

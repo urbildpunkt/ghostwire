@@ -1,6 +1,6 @@
 /* =============================================================
 	Ghostwire v1.0
-	by John Quealy http://urbildpunkt.c
+	by John Quealy http://urbildpunkt.com
 
 	Kraken v3.1
 	A lightweight front-end boilerplate by Chris Ferdinandi.
@@ -687,13 +687,7 @@ you set a great foundation, you won't need to add too many styles in
 the other stylesheets. Remember, keep it light: Speed is Important.
 */
 /* =============================================================
-
-Stylesheet: Base Mobile Stylesheet
-
-Be light and don't over style since everything here will be
-loaded by mobile devices. You want to keep it as minimal as
-possible. This is called at the top of the main stylsheet
-and will be used across all viewports.
+	 Base Mobile Stylesheet
 
  * ============================================================= */
 /* =============================================================
@@ -1144,13 +1138,7 @@ tweeners.
 */
 @media only screen and (min-width: 481px) {
   /* ============================================================= 
-  
-  Stylesheet: 481px and Up Stylesheet
-  
-  This stylesheet is loaded for larger devices. It's set to 
-  481px because at 480px it would load on a landscaped iPhone.
-  This isn't ideal because then you would be loading all those
-  extra styles on that same mobile connection. 
+  	481px and Up Stylesheet
   
    * ============================================================= */
  /* =============================================================
@@ -1177,12 +1165,6 @@ you can add resource intensive styles.
 @media only screen and (min-width: 768px) {
   /* =============================================================
   	Tablet & Small Desktop Stylesheet
-  
-  Here's where you can start getting into the good stuff.
-  This size will work on iPads, other tablets, and desktops.
-  So you can start working with more styles, background images,
-  and other resources. You'll also notice the grid starts to
-  come into play. Have fun!
   
    * ============================================================= */
   /* =============================================================
@@ -1250,9 +1232,6 @@ you can add resource intensive styles.
 @media only screen and (min-width: 1030px) {
   /* =============================================================
   	Desktop Stylsheet
-  
-  This is the desktop size. It's larger than an iPad so it will only
-  be seen on the Desktop. 
   
    * ============================================================= */
   /* =============================================================
@@ -1380,11 +1359,7 @@ This is for the larger monitors and possibly full screen viewers.
 */
 @media only screen and (min-width: 1240px) {
   /* =============================================================
-  
-  Stylesheet: Super Large Monitor Stylesheet
-  
-  You can add some advanced styles here if you like. This kicks in
-  on larger screens.
+  	Super Large Monitor Stylesheet
   
    * ============================================================= */ }
 /*

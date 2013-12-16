@@ -13,6 +13,7 @@
         <section class="post-row"  id="post-first">
 
             <article class="{{post_class}} {{#if @even}}even{{else}}odd{{/if}}" id="post-featured">
+
                 <section class="post-image">
                     <a href="/{{slug}}" class="post-image-link" rel="bookmark" title="{{title}}">
                         {{content words="0"}}
@@ -58,21 +59,22 @@
                     {{content words="0"}}
                 </a>
             </section>
+
             <section class="post-content">
-            <header class="post-header">
-                {{#if tags}}{{#each tags}} 
-                <span class="post-tag"><span class="tag-name">{{this.name}}</span></span>
-                {{/each}}{{/if}}
+                <header class="post-header">
+                    {{#if tags}}{{#each tags}} 
+                    <span class="post-tag"><span class="tag-name">{{this.name}}</span></span>
+                    {{/each}}{{/if}}
 
-                <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+                    <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
 
-                <span class="post-meta">{{author.name}} | <time datetime="{{date format='YYYY-MM-DD'}}">{{date published_at format="MMMM DD, YYYY"}}</time></span>
-            </header>
+                    <span class="post-meta">{{author.name}} | <time datetime="{{date format='YYYY-MM-DD'}}">{{date published_at format="MMMM DD, YYYY"}}</time></span>
+                </header>
 
-            <section class="post-excerpt">
-                <p>{{excerpt words="30"}}&hellip;</p>
+                <section class="post-excerpt">
+                    <p>{{excerpt words="30"}}&hellip;</p>
+                </section>
             </section>
-        </section>
         </article>
 
 {{/if}}

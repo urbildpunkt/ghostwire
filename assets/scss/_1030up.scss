@@ -1,9 +1,6 @@
 /* =============================================================
 	Desktop Stylsheet
 
-This is the desktop size. It's larger than an iPad so it will only
-be seen on the Desktop. 
-
  * ============================================================= */
 
 
@@ -32,11 +29,13 @@ be seen on the Desktop.
 			height: 435px;
 			overflow: hidden;
 			margin-bottom: 0;
+
 		a {
 			display: inline-block;
 		    position: relative;
 		    right: -50%;
 		}
+
 		img {
 			position: relative;
     		left: -50%;
@@ -62,11 +61,13 @@ be seen on the Desktop.
 		@include span-columns(12);
 			height: 260px;
 			overflow: hidden;
+
 		a {
 			display: inline-block;
 		    position: relative;
 		    right: -50%;
 		}
+
 		img {
 			position: relative;
     		left: -50%;
@@ -84,6 +85,7 @@ be seen on the Desktop.
 
 .post-tag {
 	background: none;
+
 	.tag-name {
 		display: none;
 	}
@@ -91,6 +93,7 @@ be seen on the Desktop.
 
 .post-tag:hover, .post-tag:first-child {
 	background: rgba(0,0,0,0.9);
+	
 	.tag-name {
 		display: block;
 	}

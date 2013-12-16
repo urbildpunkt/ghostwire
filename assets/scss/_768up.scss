@@ -1,12 +1,6 @@
 /* =============================================================
 	Tablet & Small Desktop Stylesheet
 
-Here's where you can start getting into the good stuff.
-This size will work on iPads, other tablets, and desktops.
-So you can start working with more styles, background images,
-and other resources. You'll also notice the grid starts to
-come into play. Have fun!
-
  * ============================================================= */
 
 
@@ -18,6 +12,7 @@ come into play. Have fun!
 
 
 #featured-content {
+
 	.post-row {
 		border: none;
 	}
@@ -29,6 +24,7 @@ come into play. Have fun!
 	.post-image {
 		@include span-columns(6 of 12);
 	}
+
 	.post-content {
 		@include span-columns(6 of 12);
 	}
@@ -56,6 +52,7 @@ come into play. Have fun!
 
 
 .share {
+	
 	.btn {
 		margin-right: 10px;
 	}
