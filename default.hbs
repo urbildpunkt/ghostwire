@@ -8,18 +8,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
         <!-- Document Title & Description -->
-        <title>{{settings.title}}</title>
+        <title>{{@blog.title}}</title>
         <meta name="description" content="{{@blog.description}}">
 
         <!-- Mobile Screen Resizing -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- Favicon -->
-        <link rel="shortcut icon" type="image/ico" href="">
-
-        <!-- MS Homescreen Icons -->
-        <meta name="msapplication-TileColor" content="#0088cc">
-        <meta name="msapplication-TileImage" content="img/ms-touch-icon.png">
 
         <!-- Announce the rss feed -->
          <link rel="alternate" type="application/rss+xml" title="{{@blog.title}} » Feed" href="/rss">
@@ -75,7 +68,12 @@
         <footer id="blog-footer">
 
             <aside class="share-buttons">
-            {{> social-buttons}}
+            <button class="btn btn-secondary twitter"><a href="http://twitter.com/urbildpunkt" target="_blank"><i class="fa fa-fw fa-twitter"></i></a></button>
+
+<button class="btn btn-secondary google-plus"><a href="https://www.google.com/+JohnQuealy" target="_blank"><i class="fa fa-fw fa-google-plus"></i></a></button>
+
+ <button class="btn btn-secondary linkedin"><a href="http://www.linkedin.com/in/jquealy/" target="_blank"><i class="fa fa-fw fa-linkedin"></i></a></button>
+ <button class="btn btn-secondary rss"><a href="{{@blog.url}}/rss/" target="_blank"><i class="fa fa-fw fa-rss"></i></a></button>
             </aside>
 
             <section class="inner-footer">

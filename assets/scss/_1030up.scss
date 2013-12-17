@@ -53,7 +53,7 @@
 
 }
 
-#post-front {
+*[id*='post-front-'] {
 	@include span-columns(4);
 	@include omega(3n);
 

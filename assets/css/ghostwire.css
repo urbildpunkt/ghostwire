@@ -1058,6 +1058,9 @@ body {
 /* =============================================================
 	SOCIAL LINK STYLES
  * ============================================================= */
+.btn a {
+  color: white; }
+
 .twitter {
   background: #41b7d8;
   border-color: #41b7d8; }
@@ -1281,43 +1284,43 @@ you can add resource intensive styles.
       #post-featured .post-content:last-child {
         margin-right: 0; }
 
-  #post-front {
+  *[id*='post-front-'] {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%; }
-    #post-front:last-child {
+    *[id*='post-front-']:last-child {
       margin-right: 0; }
-    #post-front:nth-child(3n) {
+    *[id*='post-front-']:nth-child(3n) {
       margin-right: 0; }
-    #post-front:nth-child(3n+1) {
+    *[id*='post-front-']:nth-child(3n+1) {
       clear: left; }
-    #post-front .post-image {
+    *[id*='post-front-'] .post-image {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 100%;
       height: 260px;
       overflow: hidden; }
-      #post-front .post-image:last-child {
+      *[id*='post-front-'] .post-image:last-child {
         margin-right: 0; }
-      #post-front .post-image a {
+      *[id*='post-front-'] .post-image a {
         display: inline-block;
         position: relative;
         right: -50%; }
-      #post-front .post-image img {
+      *[id*='post-front-'] .post-image img {
         position: relative;
         left: -50%;
         height: 260px;
         max-width: 500px;
         width: auto; }
-    #post-front .post-content {
+    *[id*='post-front-'] .post-content {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 100%;
       height: 220px; }
-      #post-front .post-content:last-child {
+      *[id*='post-front-'] .post-content:last-child {
         margin-right: 0; }
 
   .post-tag {

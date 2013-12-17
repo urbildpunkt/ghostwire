@@ -53,7 +53,7 @@
 
 {{else}}
 
-        <article class="{{post_class}} {{#if @even}}even{{else}}odd{{/if}}" id="post-front">
+        <article class="{{post_class}} {{#if @even}}even{{else}}odd{{/if}}" id="post-front-{{@index}}">
             <section class="post-image">
                 <a href="/{{slug}}" class="post-image-link" rel="bookmark" title="{{title}}">
                     {{content words="0"}}
