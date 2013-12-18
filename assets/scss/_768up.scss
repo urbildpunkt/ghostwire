@@ -32,6 +32,41 @@
 }
 
 
+*[id*='post-front-'] {
+	@include span-columns(6);
+	@include omega(2n);
+
+	.post-image {
+		@include span-columns(12);
+		
+			overflow: hidden;
+
+		a {
+			display: inline-block;
+		    position: relative;
+		    right: -50%;
+		}
+
+		img {
+			position: relative;
+    		left: -50%;
+
+			width: auto;
+		}
+	}
+
+	.post-content {
+		@include span-columns(12);
+		margin-top: 0;
+		height: 110px;
+	}
+
+	.post-excerpt {
+		display: none;
+	}
+}
+
+
 /* =============================================================
 	PAGE STYLES
  * ============================================================= */

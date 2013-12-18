@@ -33,6 +33,7 @@ body {
 	z-index:100000;
 	margin:auto; 
 	background: rgba(0,0,0,0.9); 
+	border-bottom: 2px solid $dark-border;
 
 	a {
 		color: $color-white;
@@ -155,11 +156,12 @@ body {
 	font-size: 0.938em;
 	margin: 20px 0;
 	background: $color-white;
+	border-bottom: 2px solid $light-border;
 
 	.post-image {
 
 		p {
-			margin-bottom: -.4em;
+			margin-bottom: 0;
 		}
 	}
 

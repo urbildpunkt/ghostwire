@@ -720,7 +720,8 @@ body {
   left: 0;
   z-index: 100000;
   margin: auto;
-  background: rgba(0, 0, 0, 0.9); }
+  background: rgba(0, 0, 0, 0.9);
+  border-bottom: 2px solid #333333; }
   #blog-header:before, #blog-header:after {
     content: " ";
     display: table; }
@@ -839,11 +840,12 @@ body {
   position: relative;
   font-size: 0.938em;
   margin: 20px 0;
-  background: white; }
+  background: white;
+  border-bottom: 2px solid #999999; }
   .post:last-child {
     margin-right: 0; }
   .post .post-image p {
-    margin-bottom: -.4em; }
+    margin-bottom: 0; }
   .post .post-header {
     padding-left: 10px; }
   .post .post-excerpt {
@@ -1198,6 +1200,45 @@ you can add resource intensive styles.
       .post .post-content:last-child {
         margin-right: 0; }
 
+  *[id*='post-front-'] {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    *[id*='post-front-']:last-child {
+      margin-right: 0; }
+    *[id*='post-front-']:nth-child(2n) {
+      margin-right: 0; }
+    *[id*='post-front-']:nth-child(2n+1) {
+      clear: left; }
+    *[id*='post-front-'] .post-image {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      overflow: hidden; }
+      *[id*='post-front-'] .post-image:last-child {
+        margin-right: 0; }
+      *[id*='post-front-'] .post-image a {
+        display: inline-block;
+        position: relative;
+        right: -50%; }
+      *[id*='post-front-'] .post-image img {
+        position: relative;
+        left: -50%;
+        width: auto; }
+    *[id*='post-front-'] .post-content {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-top: 0;
+      height: 110px; }
+      *[id*='post-front-'] .post-content:last-child {
+        margin-right: 0; }
+    *[id*='post-front-'] .post-excerpt {
+      display: none; }
+
   /* =============================================================
   	PAGE STYLES
    * ============================================================= */
@@ -1289,6 +1330,10 @@ you can add resource intensive styles.
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%; }
+    *[id*='post-front-']:nth-child(2n) {
+      margin-right: 2.35765%; }
+    *[id*='post-front-']:nth-child(2n+1) {
+      clear: none; }
     *[id*='post-front-']:last-child {
       margin-right: 0; }
     *[id*='post-front-']:nth-child(3n) {
@@ -1319,9 +1364,12 @@ you can add resource intensive styles.
       display: block;
       margin-right: 2.35765%;
       width: 100%;
-      height: 220px; }
+      margin-top: 0;
+      height: 110px; }
       *[id*='post-front-'] .post-content:last-child {
         margin-right: 0; }
+    *[id*='post-front-'] .post-excerpt {
+      display: none; }
 
   .post-tag {
     background: none; }

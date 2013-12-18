@@ -54,6 +54,7 @@
 }
 
 *[id*='post-front-'] {
+	@include omega-reset(2n);
 	@include span-columns(4);
 	@include omega(3n);
 
@@ -79,7 +80,12 @@
 
 	.post-content {
 		@include span-columns(12);
-		height: 220px;
+		margin-top: 0;
+		height: 110px;
+	}
+
+	.post-excerpt {
+		display: none;
 	}
 }
 
