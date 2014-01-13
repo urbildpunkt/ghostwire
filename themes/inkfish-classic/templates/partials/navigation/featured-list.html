@@ -1,0 +1,25 @@
+{% for child in page.root %}
+
+	{% if child.children %}
+
+		{% for child in child.children %}
+
+			{% if child.children %}
+
+				{% for child in child.children|reverse %}
+
+				{% if child.featured == true %}
+				<div class="space-bottom">                    
+		            <a href="{{ child.url }}">{{ child.title }}</a>
+		        </div>
+		        {% endif %}
+
+				{% endfor %}
+				
+			{% endif %}
+
+		{% endfor %}
+
+	{% endif %}
+
+{% endfor %}

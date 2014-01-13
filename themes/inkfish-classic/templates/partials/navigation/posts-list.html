@@ -1,0 +1,34 @@
+
+    
+
+
+<section class="space-top">
+ <article class="container">
+  <div class="row">
+
+        <div class="grid-1">
+            <h3 class="project-category space-bottom">{{ page.title }}</h3>
+        </div>
+
+{% if  page.children %}
+ <div class="grid-5 row">
+{% for child in page.children|sortbydate(child.date) %}
+  <div class="project-listing grid-6 row">
+      <div class="grid-2">
+      {% if child.thumb %}
+       <a href="{{ child.url }}" class="post-thumb"><img src="{{ child.thumb.url }}" width="{{ child.thumb.width }}" height="{{ child.thumb.height }}" alt=""></a>
+      {% endif %}
+     </div>
+      <div class="grid-4 space-bottom">                    
+          <h3 class="no-space"><a href="{{ child.url }}" class="post-title">{{ child.title }}</a></h3>
+          <br><small class="date">{{ child.date | date("M d, Y") }}</small>
+          <br><small class="text-muted">{{ child.tags }}</small>
+          <br><span>{{ child.description }}</span>
+      </div>
+  </div>
+{% endfor %}
+</div>
+{% endif %}
+</div>
+</article>
+</section>

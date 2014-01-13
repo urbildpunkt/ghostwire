@@ -1,0 +1,64 @@
+<br>
+<footer class="footer">
+    <section class="inner-footer">
+    <div class="container">
+        <article class="grid-2 widget">
+            <br>
+        </article>
+        <article class="grid-2 grid-flip text-center">
+          {% include 'partials/assets/social-widget.html' %}
+        </article>
+        <article class="grid-2 copyright">
+            <small class="text-muted">&copy; {{ page.current_year }} {{ page.name }} - <a class="atom-rss" href="{{ page.root_path }}/?/feed/"> RSS</a>
+            <br>Built with <a href="http://jquealy.com/portfolio/website-themes/"  target="_blank"><em>Inkfish</em></a> and <a href="http://www.staceyapp.com" target="_blank">Stacey</a> CMS. </small>
+        </article>
+    </div>
+    </section>
+</footer>
+
+        <!-- Javascript -->
+        <!-- In the footer for better performance -->
+        <script>
+
+            // call a function immediately after jQuery is loaded
+        head.ready("jquery", function() {
+         
+           // Navigation
+               $('.nav-toggle').click(function(e) { // When a link or button with the .nav-toggle class is clicked
+                e.preventDefault(); // Prevent the default action from occurring
+                var dataID = $(this).attr('data-target'); // Get the ID of navigation menu
+                $(dataID).toggleClass('active'); // Add or remove the .active class from the navigation menu
+            });
+
+               $('body').addClass('js'); // On page load, add the .js class to the <body> element.
+         
+        });
+
+            // call a function immediately after jQuery Tools is loaded
+        head.ready("gallery", function() {
+         
+           // Slideshow
+              $("#slider").responsiveSlides({
+                maxwidth: 800,
+                auto: false,
+                pager: false,
+                nav: true,
+                prevText: " Prev. image",  
+                nextText: "Next image ",      
+                speed: 1000,
+                timeout: 4600,
+                pause: true
+              });
+           
+        });
+         
+        // load scripts by assigning a label for them
+        head.js(
+           {jquery: "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"},
+           {gallery: "//cdnjs.cloudflare.com/ajax/libs/ResponsiveSlides.js/1.53/responsiveslides.min.js"},
+           {addto: "//static.addtoany.com/menu/page.js"}
+        );
+        </script>
+
+    </body>
+</html>

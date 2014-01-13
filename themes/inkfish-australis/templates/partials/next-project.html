@@ -1,0 +1,10 @@
+{% for sibling in page.next_sibling %}
+        <section class="float-right">
+        	{% if page.is_last %}
+        	{% else %}
+            <p class="text-right"><small>{{ sibling.title }}</small>
+            <br><a href="{{ sibling.url }}">Next project &rarr;</a></p>
+            {% endif %}
+        </section>
+{% endfor %}
+

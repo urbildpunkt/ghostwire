@@ -1,0 +1,23 @@
+
+    
+
+
+
+{% if  page.children %}
+{% for child in page.children|sortbydate(child.date) %}
+  <article class="post-listing row">
+    <aside class="grid-2">
+      {% if child.thumb %}
+       <a href="{{ child.url }}" class="post-thumb"><img src="{{ child.thumb.url }}" width="{{ child.thumb.width }}" height="{{ child.thumb.height }}" alt=""></a>
+      {% endif %}
+    </aside>
+    <section class="grid-4">
+      <a href="{{ child.url }}" class="post-title">{{ child.title }}</a>
+      <br><small class="date">{{ child.date | date("M d, Y") }}</small>
+      <br><small class="tags text-muted">{{ child.tags }}</small>
+      <br><small class="post-text">{{ child.description }}</small>
+    </section>
+  </article>
+<hr>
+{% endfor %}
+{% endif %}

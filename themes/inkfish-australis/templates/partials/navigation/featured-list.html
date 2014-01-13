@@ -1,0 +1,6 @@
+
+{% for image in page.images %}
+        <li>
+          <a href="{{ page.root_path }}?/portfolio/{{ image.link }}/"><img src="{{ image.url }}" alt="{{ image.title }}" width="{{ image.width }}" height="{{ image.height }}"></a>
+        </li>
+{% endfor %}      

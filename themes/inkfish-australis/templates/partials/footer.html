@@ -1,0 +1,75 @@
+<footer class="footer">
+    <section class="inner-footer">
+    <div class="container">
+        <article class="grid-2 widget">
+            <br>
+        </article>
+        <article class="grid-2 grid-flip ">
+            <nav class="social-nav">
+              <ul>
+                {% if page.linkedin is defined %}
+                <li class="linkedin"><a href="{{ page.linkedin }}" target="_blank"><i class="icon-linkedin-sign"></i></a></li>
+                 {% endif %}
+                {% if page.facebook is defined %}
+                <li class="facebook"><a href="{{ page.facebook }}" target="_blank"><i class="icon-facebook-sign"></i></a></li>
+                {% endif %}
+                 {% if page.googleplus is defined %}
+                <li class="googleplus"><a href="{{ page.googleplus }}" target="_blank"><i class="icon-google-plus-sign"></i></a></li>
+                 {% endif %}
+                 {% if page.twitter is defined %}
+                <li class="twitter"><a href="{{ page.twitter }}" target="_blank"><i class="icon-twitter-sign"></i></a></li>
+                 {% endif %}
+                 {% if page.adn is defined %}
+                <li class="adn"><a href="{{ page.adn }}" target="_blank"><i class="icon-adn"></i></a></li>
+                 {% endif %}
+                 {% if page.tumblr is defined %}
+                <li class="tumblr"><a href="{{ page.tumblr }}" target="_blank"><i class="icon-tumblr-sign"></i></a></li>
+                 {% endif %}
+                 {% if page.instagram is defined %}
+                <li class="instagram"><a href="{{ page.instagram }}" target="_blank"><i class="icon-instagram"></i></a></li>
+                 {% endif %}
+                 {% if page.pinterest is defined %}
+                <li class="pinterest"><a href="{{ page.pinterest }}" target="_blank"><i class="icon-pinterest-sign"></i></a></li>
+                 {% endif %}
+                 {% if page.dribbble is defined %}
+                <li class="dribbble"><a href="{{ page.dribbble }}" target="_blank"><i class="icon-dribbble"></i></a></li>
+                 {% endif %}
+                 {% if page.flickr is defined %}
+                <li class="flickr"><a href="{{ page.flickr }}" target="_blank"><i class="icon-flickr"></i></a></li>
+                 {% endif %}
+                 {% if page.youtube is defined %}
+                <li class="youtube"><a href="{{ page.youtube }}" target="_blank"><i class="icon-youtube-play"></i></a></li>
+                 {% endif %}
+              </ul>
+            </nav>
+        </article>
+        <article class="grid-2 copyright">
+            <small class="text-muted">&copy; {{ page.current_year }} {{ page.name }} - <a class="atom-rss" href="{{ page.root_path }}/?/feed/"> RSS</a>
+            <br>Built with <a href="http://jquealy.com/portfolio/website-themes/"  target="_blank"><em>Inkfish</em></a> and <a href="http://www.staceyapp.com" target="_blank">Stacey</a> CMS. </small>
+        </article>
+    </div>
+    </section>
+</footer>
+
+        <!-- Javascript -->
+        <!-- In the footer for better performance -->
+        <script src="{{ page.root_path }}/public/docs/js/inkfish.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+
+   
+        <script type="text/javascript">
+            $(document).ready(function() {
+              $('body').addClass('js');
+                  var $menu = $('#menu'),
+                    $menulink = $('.menu-link');
+                    $menulink.click(function() {
+                    $menulink.toggleClass('active');
+                    $menu.toggleClass('active');
+                    return false;
+                });
+
+            });               
+        </script>
+
+    </body>
+</html>

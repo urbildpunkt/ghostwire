@@ -1,0 +1,39 @@
+
+
+      {% include 'partials/header.html' %}
+      
+
+<br>
+
+<div class="container"> 
+
+    <div class="row">
+        {% if page.siblings %}
+            {% include 'partials/next-post.html' %}
+            {% include 'partials/previous-post.html' %}
+          {% endif %}
+    </div>      
+
+    <div class="row">
+
+        <div class="grid-4 main grid-flip">
+            <h3><span class="marker-left"></span>{{ page.title }}<span class="marker-right"></span></h3>
+           <small>{{ page.content }}</small>
+          <span class="ending">
+            <span class="date"> {{ page.date | date("M d, Y") }} </span>
+            <br><span class="tags text-muted">{{ page.tags }}</span>
+          </span>
+        </div>
+
+        <div class="grid-2 sidebar">
+          <br>
+            {% include 'partials/assets/media.html' %}
+            {% include 'partials/assets/pdfs.html' %}
+        </div>
+    </div>
+
+</div>
+
+
+
+      {% include 'partials/footer.html' %}

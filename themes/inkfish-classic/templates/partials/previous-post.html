@@ -1,0 +1,10 @@
+{% for sibling in page.previous_sibling %}
+        <section class="float-left">
+        	{% if page.is_first %}
+        	{% else %}
+            <p class="text-left">{{ sibling.title }}
+            <br><a href="{{ sibling.url }}">&larr; Prev. post</a></p>
+            {% endif %}
+        </section>
+{% endfor %}
+

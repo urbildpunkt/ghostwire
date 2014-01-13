@@ -1,0 +1,70 @@
+
+    
+
+<section class="space-top">
+  <article class="container">
+{% if page.categories == true %}
+
+  {% for child in page.children %}
+  {% if child.children %}
+  <div class="row">
+
+      <div class="grid-1">
+          <h3 class="project-category space-bottom"><a  href="{{ child.url }}">{{ child.title }}  &rarr;</a></h3>
+      </div>
+
+  <div class="grid-5 row text-center">
+    {% for child in child.children|reverse %}
+      <div class="grid-img project-listing row">
+        <div class="grid-2">
+          {% if child.thumb %}
+
+            <a href="{{ child.url }}" class="project-thumb"><img src="{{ child.thumb.url }}" width="{{ child.thumb.width }}" height="{{ child.thumb.height }}" alt=""></a>
+
+          {% endif %}
+          </div>
+          <div class="grid-4 space-bottom">                    
+            <h3 class="no-space"><a href="{{ child.url }}" class="project-title">{{ child.title }}</a></h3>
+            <br><small class="date">{{ child.date | date("M d, Y") }}</small>
+            <br><small class="text-muted">{{ child.tags }}</small>
+         </div>
+      </div>
+    {% endfor %}
+  </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+
+{% else %}
+
+  {% if page.children %}
+  <div class="row">
+
+      <div class="grid-1">
+          <h3 class="project-category space-bottom"><a  href="{{ page.root_path }}?/portfolio/">&larr; {{ page.title }}</a></h3>
+      </div>
+
+    <div class="grid-5 row text-center">
+    {% for child in page.children|sortbydate(child.date) %}
+      <div class="grid-img project-listing row">
+        <div class="grid-2">
+          {% if child.thumb %}
+
+            <a href="{{ child.url }}" class="project-thumb"><img src="{{ child.thumb.url }}" width="{{ child.thumb.width }}" height="{{ child.thumb.height }}" alt=""></a>
+
+          {% endif %}
+          </div>
+          <div class="grid-4 space-bottom">                    
+            <h3 class="no-space"><a href="{{ child.url }}" class="project-title">{{ child.title }}</a></h3>
+            <br><small class="date">{{ child.date | date("M d, Y") }}</small>
+            <br><small class="text-muted">{{ child.tags }}</small>
+         </div>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+{% endif %}
+</article>
+</section>

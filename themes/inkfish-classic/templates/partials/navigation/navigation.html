@@ -1,0 +1,9 @@
+
+             <ul class="nav">
+            	{% for child in page.root %}
+                <li><a class="{{ child.slug }}" href="{{ child.url }}">{{ child.title }}</a></li>
+                 {% endfor %}
+                 {% if page.email is defined %}
+				   <li><a class="contact" href="mailto:{{ page.email }}">Contact</a></li>
+				{% endif %}
+            </ul>

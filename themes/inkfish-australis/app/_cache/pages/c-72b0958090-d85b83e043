@@ -1,0 +1,247 @@
+
+
+      <!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+      <!-- Force latest available IE rendering engine and Chrome Frame (if installed) -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+        <title>John Quealy</title>
+        <meta name="description" content="">
+
+        
+        <!-- Mobile Screen Resizing -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="target-densitydpi=device-dpi, initial-scale=1.0, user-scalable=no" />
+        
+        <!-- stylesheet -->
+        <link rel="stylesheet" href=".//public/docs/css/inkfish-australis.css" type="text/css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="alternate" type="application/atom+xml" href=".//?/feed/">
+
+        <!-- HTML5 Shim for IE 6-8 -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+
+<header id="header">
+     <div class="container">
+    <div id="branding">
+        <h1><a href="./">John Quealy</a> <span class="divider">/</span> <span class="tagline">Front-End Developer</span><img src=".//public/docs/img/menu-btn.png" class="menu-link"></h1>
+    </div>
+        <nav  id="menu" role="navigation" class="nav">
+            <ul>
+            	                <li><a class="about" href="./?/about/">About</a></li>
+                                 <li><a class="portfolio" href="./?/portfolio/">Portfolio</a></li>
+                                 <li><a class="blog" href="./?/blog/">Blog</a></li>
+                                 <li><a class="contact" href="./?/contact/">Contact</a></li>
+                                              </ul>
+    </nav></div>
+</header>
+
+
+
+<br> 
+
+<div class="container">       
+
+    <div class="row">
+        <article class="grid-4 main grid-flip">
+          <section class="title">
+              <h3><span class="marker-left"></span>About<span class="marker-right"></span></h3>
+          </section>
+            <section class="content">
+           <small><p><strong>Inkfish Australis User Guide</strong> - Welcome to the first Inkfish theme.<br>
+It is built to be fully resposive, and I have tried to work in some easy customizability.</p>
+
+<p><strong>Stacey v3.0</strong> <br>
+This theme is built using the latest version of Stacey and is not compatabile with earlier versions.<br>
+The new documentation can be found <a href="https://github.com/kolber/stacey/wiki" target="_blank">here</a>.</p>
+
+<p><strong>Installation</strong><br>
+The installation is as easy as uploading the files to your host, you can follow the instructions <a href="http://www.staceyapp.com/installation/" target="_blank">here</a>.<br>
+If you are upgrading from a previous Stacey installation, I would recommend doing a clean install and then bringing back in your conent because it is likely you are using an earlier version.</p>
+
+<p><strong>Index</strong><br>
+The Index page is a gallery for displaying your featured projects.<br>
+It is defaulted to display them in a random order, but you can set this variable to false in the index/page.yml</p>
+
+<p>You must link the images you place in the index folder to their projects like so:</p>
+
+<pre>
+01.png:
+    link: category/project-name (Note: these are the names of the categoty & project folders w/o the preceding number)
+</pre>
+
+<p><strong>Portfolio &amp; Blog</strong><br>
+The portfolio and blog pages are set to list entries in reverse numerical order, so whenever you add a new content folder it will be placed at the top of the list.</p>
+
+<p>You can use the <code>tags:</code> variable as a tagline or to categorize your posts.</p>
+
+<p><strong>Categories</strong><br>
+Project categories are nestable, see Client Work in the Portfolio section for an example.<br>
+The hierarchy of this example is: Portfolio/Client Work/Client Name(s)/Client Project(s)</p>
+
+<p>The portfolio.yml file of any category folder(ex. Client Work) must have a <code>categories: true</code> variable.</p>
+
+<p><strong>Image Galleries</strong><br>
+The image gallery is made to be responsive, but the best default size for your images is 800x600.</p>
+
+<p>You can include captions with your images:</p>
+
+<pre>
+01.png:
+  caption: You can specify an image caption.
+02.png:
+  caption: You can specify an image caption.
+</pre>
+
+<p><strong>Contact Page or Link</strong><br>
+If you don't want to have a dedicated contact page, delete this section.</p>
+
+<p>You can also add this variable to the _shared.yml file after deleting the contact page to make it a direct email link instead:<br>
+<code>'email: name@domain.com'</code></p>
+
+<p><strong>Footer</strong><br>
+You can create social links by adding the following variables to the _shared.yml file:</p>
+
+<pre>
+linkedin: url
+facebook: url
+googleplus: url
+twitter: url (ex. http://twitter.com/username)
+adn: url  
+tumblr: url
+instagram: url
+pinterest: url
+dribbble: url
+flickr: url
+youtube: url
+</pre>
+
+<p><strong>Color Variations</strong><br>
+I included a few extra color schemes, just edit templates/partials/header.html and add -blue, -black, -blank before the .css of the stylesheet. Feel free to share some custom css files of your own.</p>
+
+<h3>Blue</h3>
+
+<p><img src="http://jquealy.com/themes/inkfish-australis/public/images/inkfish-australis-blue.png"></p>
+
+<h3>Black</h3>
+
+<p><img src="http://jquealy.com/themes/inkfish-australis/public/images/inkfish-australis-black.png"></p>
+
+<h3>Blank</h3>
+
+<p><img src="http://jquealy.com/themes/inkfish-australis/public/images/inkfish-australis-blank.png"></p>
+
+<h3>First 10 get $10 off!</h3>
+
+<h3><a href="http://gum.co/Inkfish-A/first10" target="_blank"> Buy Now</a></h3>
+
+<p><small><br>
+<strong>License</strong></p>
+
+<p>Inkfish Australis Theme v1.0</p>
+
+<p>Designed and developed by John Quealy, http://jquealy.com</p>
+
+<p>Using the following technologies:</p>
+
+<p>Stacey v3.0<br>
+  Copyright (c) 2009 Anthony Kolber</p>
+
+<p>Kraken v2.1<br>
+  A lightweight front-end boilerplate by Chris Ferdinandi.<br>
+  http://gomakethings.com</p>
+
+<p>ResponsiveSlides.js v1.54<br>
+  Copyright (c) Viljami Salminen, http://viljamis.com/</p>
+
+<p>You are free to modify this theme in any way, <br>
+  but may not publish, distribute, sublicense, and/or sell copies.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<br>
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br>
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<br>
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<br>
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<br>
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN<br>
+THE SOFTWARE.<br>
+</small></p>
+</small>
+            </section>
+        </article>
+
+        <div class="grid-2 sidebar">
+          <br>
+            <div id="media">
+        <div class="image">
+    <img src="./content/1.about/01.png" alt="" width="425" height="319">
+      </div>
+  
+  
+  
+  
+</div>              <p>
+    <br><b>PDFS</b><br>
+          <p><a href="./content/1.about/werkplaats_informations.pdf">Werkplaats informations</a></p>
+            </div>
+    </div>
+
+</div>
+
+
+
+      <footer class="footer">
+    <section class="inner-footer">
+    <div class="container">
+        <article class="grid-2 widget">
+            <br>
+        </article>
+        <article class="grid-2 grid-flip ">
+            <nav class="social-nav">
+              <ul>
+                                                                 <li class="googleplus"><a href="http://gplus.to/jquealy" target="_blank"><i class="icon-google-plus-sign"></i></a></li>
+                                                  <li class="twitter"><a href="http://twitter.com/urbildpunkt" target="_blank"><i class="icon-twitter-sign"></i></a></li>
+                                                  <li class="adn"><a href="https://alpha.app.net/urbildpunkt" target="_blank"><i class="icon-adn"></i></a></li>
+                                                                                                                                     </ul>
+            </nav>
+        </article>
+        <article class="grid-2 copyright">
+            <small class="text-muted">&copy; 2013 John Quealy - <a class="atom-rss" href=".//?/feed/"> RSS</a>
+            <br>Built with <a href="http://jquealy.com/portfolio/website-themes/"  target="_blank"><em>Inkfish</em></a> and <a href="http://www.staceyapp.com" target="_blank">Stacey</a> CMS. </small>
+        </article>
+    </div>
+    </section>
+</footer>
+
+        <!-- Javascript -->
+        <!-- In the footer for better performance -->
+        <script src=".//public/docs/js/inkfish.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+
+   
+        <script type="text/javascript">
+            $(document).ready(function() {
+              $('body').addClass('js');
+                  var $menu = $('#menu'),
+                    $menulink = $('.menu-link');
+                    $menulink.click(function() {
+                    $menulink.toggleClass('active');
+                    $menu.toggleClass('active');
+                    return false;
+                });
+
+            });               
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,112 @@
+title: About
+content: |
+  **Inkfish Australis User Guide** - Welcome to the first Inkfish theme.
+  It is built to be fully resposive, and I have tried to work in some easy customizability.
+ 
+  **Stacey v3.0** 
+  This theme is built using the latest version of Stacey and is not compatabile with earlier versions.
+  The new documentation can be found <a href="https://github.com/kolber/stacey/wiki" target="_blank">here</a>.
+
+  **Installation**
+  The installation is as easy as uploading the files to your host, you can follow the instructions <a href="http://www.staceyapp.com/installation/" target="_blank">here</a>.
+  If you are upgrading from a previous Stacey installation, I would recommend doing a clean install and then bringing back in your conent because it is likely you are using an earlier version.
+
+  **Index**
+  The Index page is a gallery for displaying your featured projects.
+  It is defaulted to display them in a random order, but you can set this variable to false in the index/page.yml
+
+  You must link the images you place in the index folder to their projects like so:
+  <pre>
+  01.png:
+  	link: category/project-name (Note: these are the names of the categoty & project folders w/o the preceding number)
+  </pre>
+
+  **Portfolio & Blog**
+  The portfolio and blog pages are set to list entries in reverse numerical order, so whenever you add a new content folder it will be placed at the top of the list.
+
+  You can use the <code>tags:</code> variable as a tagline or to categorize your posts.
+
+  **Categories**
+  Project categories are nestable, see Client Work in the Portfolio section for an example.
+  The hierarchy of this example is: Portfolio/Client Work/Client Name(s)/Client Project(s)
+
+  The portfolio.yml file of any category folder(ex. Client Work) must have a <code>categories: true</code> variable.
+
+  **Image Galleries**
+  The image gallery is made to be responsive, but the best default size for your images is 800x600.
+
+  You can include captions with your images:
+  <pre>
+  01.png:
+    caption: You can specify an image caption.
+  02.png:
+    caption: You can specify an image caption.
+  </pre>
+
+  **Contact Page or Link**
+  If you don't want to have a dedicated contact page, delete this section. 
+
+  You can also add this variable to the _shared.yml file after deleting the contact page to make it a direct email link instead:
+  <code>'email: name@domain.com'</code> 
+
+  **Footer**
+  You can create social links by adding the following variables to the _shared.yml file:
+  <pre>
+  linkedin: url
+  facebook: url
+  googleplus: url
+  twitter: url (ex. http://twitter.com/username)
+  adn: url  
+  tumblr: url
+  instagram: url
+  pinterest: url
+  dribbble: url
+  flickr: url
+  youtube: url
+  </pre>
+
+  **Color Variations**
+  I included a few extra color schemes, just edit templates/partials/header.html and add -blue, -black, -blank before the .css of the stylesheet. Feel free to share some custom css files of your own.
+  ### Blue ###
+  <img src="http://jquealy.com/themes/inkfish-australis/public/images/inkfish-australis-blue.png">
+  ### Black ###
+  <img src="http://jquealy.com/themes/inkfish-australis/public/images/inkfish-australis-black.png">
+  ### Blank ###
+  <img src="http://jquealy.com/themes/inkfish-australis/public/images/inkfish-australis-blank.png">
+ 
+  ###First 10 get $10 off!### 
+  ###<a href="http://gum.co/Inkfish-A/first10" target="_blank"> Buy Now</a>###
+
+
+  <small>
+  **License**
+
+  
+  Inkfish Australis Theme v1.0
+
+    Designed and developed by John Quealy, http://jquealy.com
+
+    Using the following technologies:
+
+    Stacey v3.0
+    Copyright (c) 2009 Anthony Kolber
+
+    Kraken v2.1
+    A lightweight front-end boilerplate by Chris Ferdinandi.
+    http://gomakethings.com
+
+    ResponsiveSlides.js v1.54
+    Copyright (c) Viljami Salminen, http://viljamis.com/
+
+    You are free to modify this theme in any way, 
+    but may not publish, distribute, sublicense, and/or sell copies. 
+
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
+  </small>

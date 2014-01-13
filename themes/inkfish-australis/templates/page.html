@@ -1,0 +1,30 @@
+
+
+      {% include 'partials/header.html' %}
+
+<br> 
+
+<div class="container">       
+
+    <div class="row">
+        <article class="grid-4 main grid-flip">
+          <section class="title">
+              <h3><span class="marker-left"></span>{{ page.title }}<span class="marker-right"></span></h3>
+          </section>
+            <section class="content">
+           <small>{{ page.content }}</small>
+            </section>
+        </article>
+
+        <div class="grid-2 sidebar">
+          <br>
+            {% include 'partials/assets/media.html' %}
+            {% include 'partials/assets/pdfs.html' %}
+        </div>
+    </div>
+
+</div>
+
+
+
+      {% include 'partials/footer.html' %}

@@ -1,0 +1,17 @@
+    <div class="callbacks_container">
+      <ul class="rslides" id="slider">
+{% for image in page.images %}
+        <li>
+          <img src="{{ image.url }}" alt="{{ image.title }}" width="{{ image.width }}" height="{{ image.height }}">
+          {% if image.caption %}
+          <p class="caption">{{ image.caption }}</p>
+           {% endif %}
+        </li>
+{% endfor %}      
+      </ul>
+    </div>
+
+    
+
+    
+

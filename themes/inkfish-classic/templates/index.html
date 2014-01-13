@@ -1,0 +1,26 @@
+      {% include 'partials/header.html' %}
+
+<section class="space-top">
+  <article class="container">
+
+    <div class="row">
+
+        <div class="grid-1 space-bottom">
+            <h3 class="project-title space-bottom">{{ page.title }}</h3>
+            {{ page.content }}
+             {% include 'partials/navigation/featured-list.html' %}
+
+        </div>
+
+        <div class="grid-5 text page row">
+          <br>
+            {% include 'partials/assets/gallery.html' %}
+        </div>
+        <br>
+    </div>
+    <br>
+  </article>
+</section>
+
+
+      {% include 'partials/footer.html' %}

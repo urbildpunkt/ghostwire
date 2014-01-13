@@ -1,0 +1,8 @@
+{% if page.pdf %}
+
+<small class="date">PDFS</small>
+{% for pdf in page.pdf %}
+   <p><small class="text-muted"><a href="{{ pdf.url }}">{{ pdf.name }}</a></small></p>
+{% endfor %}
+ 
+{% endif %}

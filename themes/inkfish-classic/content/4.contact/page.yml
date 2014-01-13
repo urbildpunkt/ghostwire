@@ -1,0 +1,8 @@
+bypass_cache: true
+title: Contact
+content: |
+  
+  <br>If you don't want to have a dedicated contact page, delete this section. 
+
+  You can also add this variable to the _shared.yml file after deleting the contact page to make it a direct email link instead:
+  <code>'email: name@domain.com'</code> 

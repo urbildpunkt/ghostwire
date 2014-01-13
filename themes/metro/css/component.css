@@ -1,0 +1,248 @@
+/* General styles for all menus */
+.menu {
+	background: #030303;
+	position: fixed;
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.menu h3 {
+	color: #333;
+	font-size: 1.9em;
+	padding: 20px;
+	margin: 0;
+	font-weight: 350;
+	background: #000;
+}
+
+.menu a {
+	display: block;
+	color: #aaa;
+	font-size: 1.1em;
+	font-weight: 350;
+	border-bottom: 1px solid #000;
+	padding: 1em;
+}
+
+.menu a:hover {
+	color: #fff;
+	background: #258ecd;
+}
+
+.menu a:active {
+	background: #afdefa;
+	color: #47a3da;
+}
+
+
+/* Vertical menu that slides from the left or right */
+
+.menu-left {
+	left: -240px;
+}
+
+.menu-right {
+	right: -240px;
+}
+
+.menu-left.menu-open {
+	left: 0px;
+}
+
+.menu-right.menu-open {
+	right: 0px;
+}
+
+/* Horizontal menu that slides from the top or bottom */
+
+.menu-top {
+	width: 100%;
+	height: 80px;
+	left: 0;
+	z-index: 1000;
+	overflow: hidden;
+	top: -150px;
+	background: #030303;
+}
+
+.menu-top h3 {
+	height: 100%;
+	width: 20%;
+	float: left;
+}
+
+.menu-top a {
+	float: left;
+	width: 20%;
+	padding: 0.8em;
+	border-left: 1px solid #258ecd;
+}
+
+.menu-top.menu-open {
+	top: 0px;
+}
+
+/* Push classes applied to the body */
+
+.menu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.menu-push-toright {
+	left: 240px;
+}
+
+.menu-push-toleft {
+	left: -240px;
+}
+
+.menu-push-tobottom {
+	bottom: -60px;
+	overflow-y: hidden;
+}
+
+
+
+/* Transitions */
+
+.menu,
+.menu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 55.1875em){
+
+	.menu-top {
+		top: -110px;
+		font-size: 75%;
+		height: 110px;
+	}
+
+
+}
+
+@media screen and (max-height: 26.375em){
+
+	.menu-vertical {
+		font-size: 90%;
+		width: 190px;
+	}
+
+	.menu-left,
+	.menu-push-toleft {
+		left: -190px;
+	}
+
+	.menu-right {
+		right: -190px;
+	}
+
+	.menu-push-toright {
+		left: 190px;
+	}
+}
+
+.grid {
+	padding: 20px 20px 100px 20px;
+	max-width: 1600px;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+}
+
+.grid li {
+	display: inline-block;
+	width: 350px;
+	margin: 0;
+	padding: 20px;
+	text-align: left;
+	position: relative;
+}
+
+.grid figure {
+	margin: 0;
+	position: relative;
+}
+
+.grid figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+
+.grid figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	background: #47a3da;
+	color: #333;
+}
+
+.grid figcaption h3 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+/* Caption Style 3 */
+.cs-style-3 figure {
+	overflow: hidden;
+}
+
+.cs-style-3 figure img {
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+}
+
+.no-touch .cs-style-3 figure:hover img,
+.cs-style-3 figure.cs-hover img {
+	-webkit-transform: translateY(-30px);
+	-moz-transform: translateY(-30px);
+	-ms-transform: translateY(-30px);
+	transform: translateY(-30px);
+}
+
+.cs-style-3 figcaption {
+	height: 60px;
+	width: 100%;
+	top: auto;
+	bottom: 0;
+	opacity: 0;
+	-webkit-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	transform: translateY(100%);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+	transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.no-touch .cs-style-3 figure:hover figcaption,
+.cs-style-3 figure.cs-hover figcaption {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform: translateY(0px);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
+	transition: transform 0.4s, opacity 0.1s;
+}
+
+@media screen and (max-width: 31.5em) {
+	.grid {
+		padding: 10px 10px 100px 10px;
+	}
+	.grid li {
+		width: 100%;
+		min-width: 300px;
+	}
+}

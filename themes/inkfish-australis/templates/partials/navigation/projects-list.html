@@ -1,0 +1,58 @@
+  
+{% if page.categories == true %}
+
+  {% for child in page.children %}
+  {% if child.children %}
+    <section class="projects-list space-top row">
+      <section class="category">
+        <h3 class="text-small text-muted text-left"><a  href="{{ child.url }}">{{ child.title }}  &rarr;</a></h3>
+      </section>
+      <br>
+    {% for child in child.children|sortbydate(child.date) %}
+      <div class="grid-2 project-listing">
+        <div class="space-bottom">
+          {% if child.thumb %}
+
+            <a href="{{ child.url }}" class="project-thumb"><img src="{{ child.thumb.url }}" width="{{ child.thumb.width }}" height="{{ child.thumb.height }}" alt=""></a>
+
+          {% endif %}
+          <p>
+          <a href="{{ child.url }}" class="project-title">{{ child.title }}</a>
+          <br><small class="date">{{ child.date | date("M d, Y") }}</small>
+          <br><small class="tags text-muted">{{ child.tags }}</small>
+          </p>
+        </div>
+      </div>
+    {% endfor %}
+    </section>
+  {% endif %}
+  {% endfor %}
+
+{% else %}
+
+  {% if page.children %}
+    <section class="projects-list space-top row">
+      <section class="category">
+        <h3 class="text-small text-muted text-left"><a  href="{{ page.root_path }}?/portfolio/">&larr; {{ page.title }}</a></h3>
+      </section>
+      <br>
+    {% for child in page.children|sortbydate(child.date) %}
+      <div class="grid-2 project-listing">
+        <div class="space-bottom">
+          {% if child.thumb %}
+
+            <a href="{{ child.url }}" class="project-thumb"><img src="{{ child.thumb.url }}" width="{{ child.thumb.width }}" height="{{ child.thumb.height }}" alt=""></a>
+
+          {% endif %}
+          <p>
+          <a href="{{ child.url }}" class="project-title">{{ child.title }}</a>
+          <br><small class="date">{{ child.date | date("M d, Y") }}</small>
+          <br><small class="tags text-muted">{{ child.tags }}</small>
+          </p>
+        </div>
+      </div>
+    {% endfor %}
+    </section>
+  {% endif %}
+
+{% endif %}

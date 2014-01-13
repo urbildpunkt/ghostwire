@@ -1,0 +1,250 @@
+
+
+     <!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+      <!-- Force latest available IE rendering engine and Chrome Frame (if installed) -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+        <title>John Quealy</title>
+        <meta name="description" content="">
+
+        
+        <!-- Mobile Screen Resizing -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="./public/docs/css/inkfish-australis.css" type="text/css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="alternate" type="application/atom+xml" href="./?/feed/">
+         
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/headjs/0.99/head.load.min.js"></script>
+
+    </head>
+
+    <body>
+
+
+<header id="header">
+
+        <nav class="nav-wrap">
+            <section class="container">
+            <a class="logo" href="./">John Quealy<br><span class="tagline">Front-End Developer</span></a>
+            <a class="nav-toggle" data-target="#nav-menu" href="#"><img src="./public/docs/img/menu-btn.png"></a>
+            <div class="nav-collapse" id="nav-menu">
+               
+             <ul class="nav">
+            	                <li><a class="portfolio" href="./?/portfolio/">Work</a></li>
+                                 <li><a class="about" href="./?/about/">About</a></li>
+                                 <li><a class="blog" href="./?/blog/">Blog</a></li>
+                                 <li><a class="contact" href="./?/contact/">Contact</a></li>
+                                              </ul>
+            </div>
+            </section>
+        </nav>
+
+</header>
+
+
+
+<section class="space-top">
+  <article class="container">
+  
+    <div class="row">
+
+        <div class="grid-1 space-bottom">
+            <h3 class="project-category space-bottom">About</h3>
+            
+<small class="date">PDFS</small>
+   <p><small class="text-muted"><a href="./content/2.about/werkplaats_informations.pdf">Werkplaats informations</a></small></p>
+ 
+        </div>
+
+        <div class="grid-5 row">
+            <section class="grid-6 page">
+              <br>
+            <div id="media">
+        <div class="image text-center">
+    <img src="./content/2.about/01.png" alt="" width="390" height="150">
+      </div>
+  
+  
+  
+  
+</div>            <h3>Inkfish Classic User Guide</h3>
+
+<p>Built to be fully resposive with some easy customizability.</p>
+
+<p><strong>Stacey v3.0</strong> <br>
+This theme is built using the latest version of Stacey and is not compatabile with earlier versions.<br>
+The new documentation can be found <a href="https://github.com/kolber/stacey/wiki" target="_blank">here</a>.</p>
+
+<p><strong>Installation</strong><br>
+The installation is as easy as uploading the files to your host, you can follow the instructions <a href="http://www.staceyapp.com/installation/" target="_blank">here</a>.<br>
+If you are upgrading from a previous Stacey installation, I would recommend doing a clean install and then bringing back in your conent because it is likely you are using an earlier version.</p>
+
+<p><strong>Index</strong><br>
+The Index page lists your featured projects, which can be set with <code>featured: true (or false)</code> variable.</p>
+
+<p><strong>Portfolio &amp; Blog</strong><br>
+The portfolio and blog pages are set to list entries in reverse order, so whenever you add a new content folder it will be placed at the top of the list.</p>
+
+<p>You can use the <code>tags:</code> variable as a tagline or to categorize your posts.</p>
+
+<p><strong>Categories</strong><br>
+Project categories are nestable, see Client Work in the Portfolio section for an example.<br>
+The hierarchy of this example is: <code>Portfolio / Client Work / Client Name(s) / Client Project(s)</code></p>
+
+<p>The portfolio.yml file of any category folder(ex. Client Work) must have a <code>categories: true</code> variable.</p>
+
+<p><strong>Image Galleries</strong><br>
+The image gallery is made to be responsive, but the best default size for your images is 800x600.</p>
+
+<p>You can include captions with your images:</p>
+
+<pre>
+01.png:
+  caption: You can specify an image caption.
+02.png:
+  caption: You can specify an image caption.
+</pre>
+
+<p><strong>Contact Page or Link</strong><br>
+If you don't want to have a dedicated contact page, delete this section.</p>
+
+<p>You can also add this variable to the _shared.yml file after deleting the contact page to make it a direct email link instead:<br>
+<code>'email: name@domain.com'</code></p>
+
+<p><strong>Footer</strong><br>
+You can create social links by adding the following variables to the _shared.yml file:</p>
+
+<pre>
+linkedin: url
+facebook: url
+googleplus: url
+twitter: url (ex. http://twitter.com/username)
+adn: url  
+tumblr: url
+instagram: url
+pinterest: url
+dribbble: url
+flickr: url
+youtube: url
+</pre>
+
+<h3>First 10 get $10 off!</h3>
+
+<h2><a href="http://gum.co/inkfish-c/first-10" target="_blank"> Buy Now</a></h2>
+
+<p><small><br>
+<strong>License</strong></p>
+
+<p>Inkfish Classic Theme v1.0</p>
+
+<p>Designed and developed by John Quealy, http://jquealy.com</p>
+
+<p>Using the following technologies:</p>
+
+<p>Stacey v3.0<br>
+  Copyright (c) 2009 Anthony Kolber</p>
+
+<p>Kraken v2.1<br>
+  A lightweight front-end boilerplate by Chris Ferdinandi.<br>
+  http://gomakethings.com</p>
+
+<p>ResponsiveSlides.js v1.54<br>
+  Copyright (c) Viljami Salminen, http://viljamis.com/</p>
+
+<p>You are free to modify this theme in any way, <br>
+  but may not publish, distribute, sublicense, and/or sell copies.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<br>
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br>
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<br>
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<br>
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<br>
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN<br>
+THE SOFTWARE.<br>
+</small></p>
+
+            </section>
+        </div>
+
+    </div>
+
+  </article>
+</section>
+
+
+      <br>
+<footer class="footer">
+    <section class="inner-footer">
+    <div class="container">
+        <article class="grid-2 widget">
+            <br>
+        </article>
+        <article class="grid-2 grid-flip text-center">
+          <nav class="social-nav">
+  <ul>
+                 <li class="googleplus"><a href="http://gplus.to/jquealy" target="_blank"><i class="icon-google-plus"></i></a></li>
+              <li class="twitter"><a href="http://twitter.com/urbildpunkt" target="_blank"><i class="icon-twitter"></i></a></li>
+              <li class="adn"><a href="https://alpha.app.net/urbildpunkt" target="_blank"><i class="icon-adn"></i></a></li>
+                                     </ul>
+</nav>        </article>
+        <article class="grid-2 copyright">
+            <small class="text-muted">&copy; 2013 John Quealy - <a class="atom-rss" href=".//?/feed/"> RSS</a>
+            <br>Built with <a href="http://jquealy.com/portfolio/website-themes/"  target="_blank"><em>Inkfish</em></a> and <a href="http://www.staceyapp.com" target="_blank">Stacey</a> CMS. </small>
+        </article>
+    </div>
+    </section>
+</footer>
+
+        <!-- Javascript -->
+        <!-- In the footer for better performance -->
+        <script>
+
+            // call a function immediately after jQuery is loaded
+        head.ready("jquery", function() {
+         
+           // Navigation
+               $('.nav-toggle').click(function(e) { // When a link or button with the .nav-toggle class is clicked
+                e.preventDefault(); // Prevent the default action from occurring
+                var dataID = $(this).attr('data-target'); // Get the ID of navigation menu
+                $(dataID).toggleClass('active'); // Add or remove the .active class from the navigation menu
+            });
+
+               $('body').addClass('js'); // On page load, add the .js class to the <body> element.
+         
+        });
+
+            // call a function immediately after jQuery Tools is loaded
+        head.ready("gallery", function() {
+         
+           // Slideshow
+              $("#slider").responsiveSlides({
+                maxwidth: 800,
+                auto: false,
+                pager: false,
+                nav: true,
+                prevText: " Prev. image",  
+                nextText: "Next image ",      
+                speed: 1000,
+                timeout: 4600,
+                pause: true
+              });
+           
+        });
+         
+        // load scripts by assigning a label for them
+        head.js(
+           {jquery: "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"},
+           {gallery: "//cdnjs.cloudflare.com/ajax/libs/ResponsiveSlides.js/1.53/responsiveslides.min.js"},
+           {addto: "//static.addtoany.com/menu/page.js"}
+        );
+        </script>
+
+    </body>
+</html>

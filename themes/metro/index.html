@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Metro Theme</title>
+
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body class="menu-push">
+
+		<nav class="menu menu-left">
+			<h3>Menu</h3>
+			<a href="#">Celery seakale</a>
+			<a href="#">Dulse daikon</a>
+			<a href="#">Zucchini garlic</a>
+			<a href="#">Catsear azuki bean</a>
+			<a href="#">Dandelion bunya</a>
+			<a href="#">Rutabaga</a>
+		</nav>
+		<nav class="menu menu-right">
+			<h3><li id="menu-close"><i class="icon-arrow-left"></i></li> Menu</h3>
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Work</a>
+			<a href="#">Blog</a>
+			<a href="#">Contact</a>
+			<a href="#">Etc</a>
+		</nav>
+		<nav class="menu menu-top">
+			<h3><li id="search-close"><i class="icon-arrow-down"></i></li> Search</h3>
+		</nav>
+		
+		<div class="container">
+
+			<header class="clearfix">
+				<span>Modern Metro</span>
+				<h1>Start</h1>
+				<nav>
+				<ul>
+					<li><i class="icon-home icon-large"></i></li>
+					<li id="showTop"><i id="search-button" class="icon-search icon-large"></i></li>
+					<li id="showRightPush"><i id="menu-button" class="icon-reorder icon-large"></i></li>
+				</ul>
+				</nav>
+			</header>
+
+			<div class="main">
+				<section class="">
+					<h2>Featured Projects</h2>
+
+					<ul class="grid cs-style-3">
+				<li>
+					<a href="#"><figure>
+						<img src="images/1.png" alt="img01">
+						<figcaption>
+							<h3>Title</h3>
+							<span>Tagline.</span>
+						</figcaption>
+					</figure></a>
+				</li>
+				<li>
+					<figure>
+						<img src="images/2.png" alt="img02">
+						<figcaption>
+							<h3>Title</h3>
+							<span>Tagline.</span>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="images/4.png" alt="img04">
+						<figcaption>
+							<h3>Title</h3>
+							<span>Tagline.</span>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="images/5.png" alt="img05">
+						<figcaption>
+							<h3>Title</h3>
+							<span>Tagline.</span>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="images/3.png" alt="img03">
+						<figcaption>
+							<h3>Title</h3>
+							<span>Tagline.</span>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="images/6.png" alt="img06">
+						<figcaption>
+							<h3>Title</h3>
+							<span>Tagline.</span>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+				</section>
+
+				
+			</div>
+		</div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        
+		<script>
+			var $menuLeft = $('.menu-left'),
+				$menuRight = $('.menu-right'),
+				$menuTop = $('.menu-top'),
+				$showLeft = $('.menu-left'),
+				$showRight = $('#showRight'),
+				$showLeftPush = $('#showLeftPush'),
+				$showRightPush = $('#showRightPush'),
+				$showTop = $('#showTop'),
+				$menuButton = $('#menu-button'),
+				$menuClose = $('#menu-close'),
+				$searchButton = $('#search-button'),
+				$searchClose = $('#search-close'),
+				$body = $('body');
+
+			function menuSwitch() {
+				  $menuButton.toggleClass('icon-reorder');
+				  $menuButton.toggleClass('icon-remove');
+				}
+
+			function menuClose() {
+					$showRightPush.removeClass('acive');
+					$body.removeClass('menu-push-toleft');
+					$menuRight.removeClass('menu-open');
+					menuSwitch();
+				}
+
+			function searchSwitch() {
+				  $searchButton.toggleClass('icon-search');
+				  $searchButton.toggleClass('icon-remove');
+				}
+
+			function searchClose() {
+				$showTop.removeClass('acive');
+				$menuTop.removeClass('menu-open');
+				$body.removeClass('menu-push-tobottom');
+				searchSwitch();
+				}
+
+			$showLeft.click(function() {
+				$showLeft.toggleClass('active');
+				$menuLeft.toggleClass('menu-open');
+			});
+			$showRight.click(function() {
+				$showRight.toggleClass('active');
+				$menuRight.toggleClass('menu-open');
+			});
+			$showLeftPush.click(function() {
+				$showLeftPush.toggleClass('active');
+				$body.toggleClass('menu-push-toright');
+				$menuLeft.toggleClass('menu-open');
+			});
+			$showRightPush.click(function() {
+				if ($menuTop.hasClass("menu-open")) {
+						searchClose();
+					}
+				$showRightPush.toggleClass('acive');
+				$body.toggleClass('menu-push-toleft');
+				$menuRight.toggleClass('menu-open');
+				menuSwitch();
+			});
+			$showTop.click(function() {
+				if ($menuRight.hasClass("menu-open")) {
+						menuClose();
+					}
+				$showTop.toggleClass('active');
+				$body.toggleClass('menu-push-tobottom');
+				$menuTop.toggleClass('menu-open');
+				searchSwitch();
+			});
+			$menuClose.click(function() {
+				menuClose();
+			});
+			$searchClose.click(function() {
+				searchClose();
+			});
+		</script>
+
+	</body>
+</html>

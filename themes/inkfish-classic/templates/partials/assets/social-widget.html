@@ -1,0 +1,37 @@
+<nav class="social-nav">
+  <ul>
+    {% if page.linkedin is defined %}
+    <li class="linkedin"><a href="{{ page.linkedin }}" target="_blank"><i class="icon-linkedin"></i></a></li>
+     {% endif %}
+    {% if page.facebook is defined %}
+    <li class="facebook"><a href="{{ page.facebook }}" target="_blank"><i class="icon-facebook"></i></a></li>
+    {% endif %}
+     {% if page.googleplus is defined %}
+    <li class="googleplus"><a href="{{ page.googleplus }}" target="_blank"><i class="icon-google-plus"></i></a></li>
+     {% endif %}
+     {% if page.twitter is defined %}
+    <li class="twitter"><a href="{{ page.twitter }}" target="_blank"><i class="icon-twitter"></i></a></li>
+     {% endif %}
+     {% if page.adn is defined %}
+    <li class="adn"><a href="{{ page.adn }}" target="_blank"><i class="icon-adn"></i></a></li>
+     {% endif %}
+     {% if page.tumblr is defined %}
+    <li class="tumblr"><a href="{{ page.tumblr }}" target="_blank"><i class="icon-tumblr"></i></a></li>
+     {% endif %}
+     {% if page.instagram is defined %}
+    <li class="instagram"><a href="{{ page.instagram }}" target="_blank"><i class="icon-instagram"></i></a></li>
+     {% endif %}
+     {% if page.pinterest is defined %}
+    <li class="pinterest"><a href="{{ page.pinterest }}" target="_blank"><i class="icon-pinterest"></i></a></li>
+     {% endif %}
+     {% if page.dribbble is defined %}
+    <li class="dribbble"><a href="{{ page.dribbble }}" target="_blank"><i class="icon-dribbble"></i></a></li>
+     {% endif %}
+     {% if page.flickr is defined %}
+    <li class="flickr"><a href="{{ page.flickr }}" target="_blank"><i class="icon-flickr"></i></a></li>
+     {% endif %}
+     {% if page.youtube is defined %}
+    <li class="youtube"><a href="{{ page.youtube }}" target="_blank"><i class="icon-youtube-play"></i></a></li>
+     {% endif %}
+  </ul>
+</nav>

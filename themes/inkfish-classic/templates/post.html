@@ -1,0 +1,41 @@
+
+{% include 'partials/header.html' %}
+
+
+<section class="space-top">
+  <article class="container">
+
+    <div class="row">
+
+        <div class="grid-2 page row">
+          <br>
+            {% include 'partials/assets/media.html' %}
+            {% include 'partials/assets/pdfs.html' %}
+        </div>
+
+        <div class="grid-4 space-bottom">
+            <h3 class="post-title space-bottom">{{ page.title }}</h3>
+            {{ page.content }}
+            <br><small class="date">{{ page.date | date("M d, Y") }}</small>
+            <br><small class="text-muted">{{ page.tags }}</small>
+            <br>
+              <!-- AddToAny BEGIN -->
+              <br><a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><i class="icon-share"> Share {{ page.title }}</i></a>
+              <!-- AddToAny END -->
+        </div>
+
+        <br>
+    </div>
+    <br>
+    <div class="row page space-top">
+        {% if page.siblings %}
+            {% include 'partials/next-post.html' %}
+            {% include 'partials/previous-post.html' %}
+          {% endif %}
+    </div> 
+  </article>
+</section>
+
+
+
+{% include 'partials/footer.html' %}
