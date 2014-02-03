@@ -153,7 +153,7 @@ jQuery(document).ready(function($) {
 
         var id = $(this).attr("id");
         var i;
-        $("#" + id).empty().append('<img src="/assets/images/loader.gif" />');
+        $("#" + id).empty().append('<img src="http://urbildpunkt.com/ghostwire/assets/images/loader.gif" />');
         $.ajax({
             url: "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=" + def.MaxCount + "&output=json&q=" + encodeURIComponent(def.FeedUrl) + "&hl=en&callback=?",
             dataType: "json",
