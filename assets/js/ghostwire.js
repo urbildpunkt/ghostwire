@@ -94,7 +94,6 @@ jQuery(document).ready(function($) {
       }
     $featuredImage.remove()
 
-
 }); /* end of as page load scripts */
 
 
@@ -136,9 +135,9 @@ jQuery(document).ready(function($) {
 (function ($) {
     $.fn.FeedEk = function (opt) {
         var def = $.extend({
-            FeedUrl: "http://rss.cnn.com/rss/edition.rss",
+            FeedUrl: "hhttp://urbildpunkt.com/ghostwire/feed.rss",
             MaxCount: 10,
-            ShowDesc: true,
+            ShowDesc: false,
             ShowPubDate: true,
             CharacterLimit: 0,
             TitleLinkTarget: "_self"
