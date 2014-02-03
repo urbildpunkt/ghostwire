@@ -49,6 +49,14 @@ jQuery(document).ready(function($) {
             $(this).attr('src',$(this).attr('data-gravatar'));
         });
 
+        $('#recent-posts').FeedEk({
+            FeedUrl: 'http://urbildpunkt.com/ghostwire/feed.rss',
+            MaxCount: 10,
+            ShowDesc: false,
+            ShowPubDate: true,
+            DescCharacterLimit: 150
+        });
+
 
     }
 
