@@ -206,38 +206,6 @@
         <!-- Javascript -->
         <!-- In the footer for better performance -->
         <script src="assets/js/ghostwire.js"></script>
-        <script src="assets/js/jquery.fitvids.js"></script>
-
-        <!-- Init RSS Feed for Recent Stories Widget -->
-        <script>
-         // FitVids
-        $(".content").fitVids();
-
-        jQuery(document).ready(function($) {
-            var responsive_viewport = $(window).width();
-
-            if (responsive_viewport >= 768) {
-
-                $('#recent-posts').FeedEk({
-                    FeedUrl: 'http://ghostwire.apps.runkite.com/rss/',
-                    MaxCount: 10,
-                    ShowDesc: false,
-                    ShowPubDate: true,
-                    DescCharacterLimit: 150
-                });
-             }
-
-        });
-        </script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <!-- (Via HTML5 Boilerplate: http://html5boilerplate.com/) -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
-
+        
     </body>
 </html>
