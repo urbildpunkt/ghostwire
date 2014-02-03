@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<!-- Force latest available IE rendering engine and Chrome Frame (if installed) -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<!-- Document Title & Description -->
+	<title></title>
+	<meta name="description" content="">
+
+	<!-- Mobile Screen Resizing -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/ico" href="documentation.html">
+
+	<!-- MS Homescreen Icons -->
+	<meta name="msapplication-TileColor" content="#0088cc">
+	<meta name="msapplication-TileImage" content="img/ms-touch-icon.png">
+
+	<!-- stylesheet -->
+	<link rel="stylesheet" href="assets/css/ghostwire.css" type="text/css">
+
+	<!-- HTML5 Shim for IE 6-8 -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<style type="text/css" media="screen">
+		#blog-header { 
+			position: relative;
+			background: #000;
+		}
+		.container {
+			background: #fff;
+		}
+
+		a {
+			color: #0088cc;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: 700;
+		}
+
+		.guide-header {
+			display: block;
+			width: 100%;
+			margin: 30px 0 20px 0;
+			border-bottom: 2px solid #999;
+		}
+
+		.guide-title {
+			display: block;
+			width: 300px;
+			font-size: 1em;
+			font-weight: 700;
+			text-align: center;
+			color: #333333;
+			text-transform: uppercase;
+			margin-bottom: -2px;
+			border-bottom: 2px solid #333333;
+		}
+
+		.section-header {
+			width: 200px;
+			font-size: 0.938em;
+		}
+
+		.top-arrow {
+			content: '';
+			position: relative;
+			cursor: pointer;
+			float: right;
+			top: 5px;
+			right: 10px;
+			margin: 0 auto;
+			width: 0px;
+			height: 0px;
+			border-left: 7px solid transparent;
+			border-right: 7px solid transparent;
+			border-bottom: 7px solid #999999;
+		}
+
+		code {
+			font-family: Inconsolata,monospace;
+			color: #3C4043;
+			padding: 2px 4px;
+			background: #FFFFD8;
+			border: 1px solid #F2F2CB;
+			border-radius: 2px 2px 2px 2px;
+		}
+	</style>
+
+</head>
+
+<body>
+
+<!-- Old Browser Warning -->
+<!-- If you're supporting IE 6-7, remove this -->
+<!--[if lt IE 8]>
+	<section class="container">
+		Did you know that your web browser is a bit old? Some of the content on this site might not work right as a result. <a href="http://whatbrowser.org">Upgrade your browser</a> for a faster, better, and safer web experience.
+	</section>
+<![endif]-->
+
+
+	<section class="container">
+
+		<section class="row">
+
+			<section class="guide-header"><span class="guide-title">Ghostwire: The User Guide</span></section>
+			
+			<div class="grid-two-thirds"><img src="content/images/2013/Dec/ghostwire_news-1.png" alt=""></div>
+
+
+			<aside class="grid-third grid-flip" id="toc">
+				<p>
+					<strong class="text-small">
+					Created: Dec 14, 2013<br>
+					By: <a href="http://themeforest.net/user/urbildpunkt" target="_blank">John Quealy</a><br>
+					Version: 1.0 - <a href="documentation.html#changelog">View Changelog</a><br>
+					<span class="text-muted">Built for Ghost v0.3.3</span>
+					</strong>
+				</p>
+
+			    <span class="guide-header"><span class="section-header">Table of Contents</span></span>
+				<ol class="alpha">
+					<li><a href="documentation.html#features">Features</a></li>
+					<li><a href="documentation.html#installation">Installation</a></li>
+					<li><a href="documentation.html#files">File Structure</a>
+						<ul>
+							<li><a href="documentation.html#templates">Templates</a></li>
+							<li><a href="documentation.html#css">Style Sheets</a></li>
+						</ul>
+					</li>
+					<li><a href="documentation.html#usage">Configuration & Usage</a></li>
+					<li><a href="documentation.html#credits">Source Credits</a></li>
+					<li><a href="documentation.html#changelog">Version History</a></li>
+				</ol>
+			</aside>
+
+		</section>
+
+		<section class="row">
+
+			<div class="grid-two-thirds">
+				<!-- <span class="guide-header text-center" style="border: none">See the always up-to-date online version of this guide <a href="http://ghostwire.apps.runkite.com/documentation.html">here</a>.</span> -->
+
+				<section class="guide-header" id="features"><span class="section-header">Features <a href="documentation.html#toc"><figure class="top-arrow"></figure></a></span></section>
+				<p><strong>Ghostwire: News</strong> is a magazine-style <a href="http://ghost.org/" target="_blank">ghost</a> theme perfect for any news or editorial blog. It was built mobile-first to be fully responsive and features a clean design that allows for your content to take the spotlight.</p>
+					<div class="row">
+						<div class="grid-half">
+							Features:
+							<ul>
+								<li>Tile-based Homepage Layout</li>
+								<li>Featured Latest Post</li>
+								<li>Unique Image Headers for Each Post</li>
+								<li>Featured Latest Post</li>
+								<li>Recent Stories Widget</li>
+								<li>Social Sharing & Profile Links</li>
+								<li>Disqus Comments</li>
+							</ul>
+						</div>
+						<div class="grid-half">
+								Technical:
+							<ul>
+								<li>HTML5 / CSS3 / jQuery</li>
+								<li>Mobile-First</li>
+								<li>100% Responsive</li>
+								<li>Clean Design</li>
+							</ul>
+						</div>
+					</div>
+				
+
+
+				<section class="guide-header" id="installation"><span class="section-header">Installation <a href="documentation.html#toc"><figure class="top-arrow"></figure></a></span></section>
+				<p>Ghost themes are located in the <code class="path">ghost/content/themes/</code> directory.</p>
+
+				To install your new theme:
+					<ol>
+						<li>Copy the <em>ghostwire</em> folder into the <code class="path">ghost/content/themes/</code> directory.</li>
+						<li> Restart Ghost.</li>
+						<li> Login to your Ghost admin, and navigate to <code class="path">/ghost/settings/general/</code>.</li>
+						<li> Select the <em>ghostwire</em> theme in the &#39;Theme&#39; options dropdown.</li>
+						<li> Click &#39;Save&#39;.</li>
+					</ol>
+
+
+				<section class="guide-header" id="files"><span class="section-header">File Structure <a href="documentation.html#toc"><figure class="top-arrow"></figure></a></span></section>
+
+				The Ghostwire theme file structure is:
+				<pre>
+				ghostwire
+				├── /assets
+				|   └── /css
+				|   |   ├── ghostwire.css
+				|	|	└── custom.css
+				|	|	
+				|   ├── /fonts
+				|   ├── /images
+				|   ├── /js
+				|	└── /scss [source files]
+				|
+				├── default.hbs
+				├── index.hbs
+				├─── post.hbs
+				|
+				└── /partials
+					├── comments.hbs
+				    ├── social-buttons.hbs
+				    └── 
+				</pre>
+
+				<section class="guide-header" id="templates"><span class="section-header">Templates <a href="documentation.html#toc"><figure class="top-arrow"></figure></a></span></section>
+
+				<h5>default.hbs</h5>
+
+				<p>This is the default template which contains the HTML that appears on every page, including that of the header and footer.</p>
+
+				<p>The handlebars expression <code>{{{body}}}</code> denotes where the content from other templates which extend the default template goes.</p>
+
+				<p>Page templates start with <code>{{!< default}}</code> to specify that they extend the default template, and their content will be placed where <code>{{{body}}}</code> is defined in default.hbs.</p>
+
+				<h5>index.hbs</h5>
+
+				<p>This is the homepage template which extends default.hbs and defines how the posts listing will be displayed.</p>
+
+				<h5>post.hbs</h5>
+
+				<p>This template extends default.hbs and defines how each individual post page will be displayed.</p>
+
+				<h5><span class="text-muted">partials/</span>social-buttons.hbs - (<a href="documentation.html#usage">Configuration & Usage</a>)</h5>
+
+				<p>This template defines the buttons that lead to your various social media accounts.</p>
+
+				<h5><span class="text-muted">partials/</span>comments.hbs - (<a href="documentation.html#usage">Configuration & Usage</a>)</h5>
+
+				<p>This template sets up your Disqus commenting system.</p>
+
+				<section class="guide-header" id="css"><span class="section-header">Style Sheets <a href="documentation.html#toc"><figure class="top-arrow"></figure></a></span></section>
+
+				<h5><span class="text-muted">css/</span>ghostwire.css</h5>
+
+				<p>This style sheet contains all of the CSS compiled from the Sass source files.</p>
+
+				<h5><span class="text-muted">css/</span>custom.css</h5>
+
+				<p>This style sheet is blank for adding in your own custom styles and overrides.</p>
+								
+
+				<section class="guide-header" id="usage"><span class="section-header">Config & Usage <a href="documentation.html#toc"><figure class="top-arrow"></figure></a></span></section>
+
+				<h3>Social Media Button Links</h3>
+
+				<ol>
+					<li>Open the <code class="path">ghostwire/partials/social-buttons.hbs</code> file.</li>
+					<li> Replace the "#" of each button with your corresponsing social network profile link.</li>
+					<li> Delete the full link of any social buttons that you don't want to use.</li>
+				</ol>
+
+				Full button link example:
+				<pre>
+				&lt;a href="<code>#</code>" target="_blank"&gt;
+					&lt;button class="btn btn-secondary <code>twitter</code>"&gt;
+						&lt;i class="fa fa-fw <code>fa-twitter</code>"&gt;&lt;/i&gt;
+					&lt;/button&gt;
+				&lt;/a&gt;
+				</pre>
+
+				<h3>Disqus Comments</h3>
+
+				<ol>
+					<li>Open the <code class="path">ghostwire/partials/comments.hbs</code> file.</li>
+					<li> Replace 'ghostwire' from the <code>var disqus_shortname = 'ghostwire';</code> variable with your own Disqus shortname.</li>
+				</ol>
+
+				<p>See the <a href="http://help.disqus.com/customer/portal/articles/565624-tightening-your-disqus-integration" target="_blank">Official Documentation</a> for a more thorough installation guide.</p>
+
+				<p><strong>Note:</strong> To remove the comments section completely, delete the <code>{{> comments}}</code> expression from <code class="path">ghostwire/post.hbs</code></p>
+
+				<h3>Thumbnail Images</h3>
+
+				<p>It is necessary to put the intended thumbnail image at the top of your post, which is a work-around until Ghost offers a better solution.</p>
+
+				<p><strong>Note:</strong> Thumbnails will display up to five tags, with all but the first hidden until hovered over.</p>
+
+				<h3>Header Background Images</h3>
+
+				<p>Set the name of your image as <em>featured-header</em> and a jQuery hack will take care of the rest, another temporary work-around: <code>![featured-header]()</code>.</p>
+
+				<p><strong>Note:</strong> When setting an image as the background of a post's header, it is best to put it at the very end of the post.</p>
+
+				<h3>Recent Stories Widget</h3>
+
+				<p>The recent stories list is generated from your blog's RSS feed using jQuery.</p>
+
+				To change the number of posts displayed:
+				<ol>
+					<li>Open the <code class="path">ghostwire/default.hbs</code> file.</li>
+					<li> Change '10' from the <code>MaxCount: 10</code> variable at the bottom of the file.</li>
+				</ol>
+
+				<h3>Google Analytics</h3>
+				<ol>
+					<li>Open the <code class="path">ghostwire/default.hbs</code> file.</li>
+					<li>See the bottom of the file for instructions on adding your site's ID.</li>
+				</ol>
+
+				<section class="guide-header" id="credits"><span class="section-header">Source Credits<a href="documentation.html#toc"><figure class="top-arrow"></figure></a></span></section>
+
+				<ul class="list-unstyled">
+					<li><a href="http://sass-lang.com/" target="_blank">Sass</a>: syntactically awesome style sheets.</li>
+					<li><a href="http://bourbon.io/" target="_blank">Bourbon</a>: Sass mixin library.</li>
+					<li><a href="http://neat.bourbon.io/" target="_blank">Bourbon Neat</a>: open source semantic grid framework built on top of Sass and Bourbon.</li>
+					<li><a href="http://cferdinandi.github.io/kraken/index.html" target="_blank">Kraken</a>: lightweight, mobile-first boilerplate.</li>
+					<li><a href="http://fontawesome.io/" target="_blank">Font Awesome</a>, the Iconic Font.</li>
+					<li><a href="http://fitvidsjs.com/" target="_blank">FitVids.js</a>: A lightweight, easy-to-use jQuery plugin for fluid width video embeds.</li>
+					<li><a href="http://jquery-plugins.net/FeedEk/FeedEk.html" target="_blank">FeedEk</a>: RSS/ATOM Feed Reader/Importer/Parser jQuery plugin.</li>
+				</ul>
+
+				Parts of this guide were taken from <a href="http://docs.ghost.org/" target="_blank">The Ghost Guide</a>.
+
+				<h3>Useful Tools</h3>
+
+				<ul class="list-unstyled">
+					<li><a href="http://www.sublimetext.com/3" target="_blank">Sublime Text</a>: sophisticated text editor for code, markup and prose.</li>
+					<li><a href="http://koala-app.com/" target="_blank">Koala</a>: <strong>cross-platform</strong> GUI application for Less, Sass, Compass and CoffeeScript compilation.</li>
+				</ul>
+
+				<section class="guide-header" id="changelog"><span class="section-header">Version History<a href="documentation.html#toc"><figure class="top-arrow"></figure></a></span></section>
+
+				<pre>
+				Version 1.0 (12.14.2013)
+				* Initial Release
+				</pre>
+
+			</div>
+
+		</section>
+
+	</section>
+
+
+
+</body>
+</html>

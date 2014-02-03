@@ -25,8 +25,9 @@
         <link rel="stylesheet" id="custom-stylesheet-css" href="assets/css/custom.css" type="text/css" media="all">
 
         
-        <meta name="generator" content="Ghost 0.3" />
-<link rel="alternate" type="application/rss+xml" title="RSS" href="rss">
+        <meta name="generator" content="Ghost 0.4" />
+<link rel="alternate" type="application/rss+xml" title="Ghostwire" href="rss">
+<link rel="canonical" href="post-title-2" />
 
         <!-- HTML5 Shim for IE 6-8 -->
         <!--[if lt IE 9]>
@@ -107,21 +108,19 @@
 
             <section class="post-share">
             <span class="share-header"><span class="section-header">Share</span></span>
-            <a class="icon-twitter" href="http://twitter.com/share?text=Post Title&url=http://127.0.0.1:2368/post-title-2/"
+            <a class="icon-twitter" href="http://twitter.com/share?text=Post Title&url=http://ghostwire.apps.runkite.com/post-title-2/"
                 onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                 <span class="hidden"><button class="btn btn-secondary twitter"><i class="fa fa-fw pull-left fa-twitter"></i><span class="social-title"> Twitter</span></button></span>
             </a>
-            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:2368/post-title-2/"
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://ghostwire.apps.runkite.com/post-title-2/"
                 onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                 <span class="hidden"><button class="btn btn-secondary facebook"><i class="fa fa-fw pull-left fa-facebook"></i><span class="social-title"> Facebook</span></button></span>
             </a>
-            <a class="icon-google-plus" href="https://plus.google.com/share?url=http://127.0.0.1:2368/post-title-2/"
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=http://ghostwire.apps.runkite.com/post-title-2/"
                onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                 <span class="hidden"><button class="btn btn-secondary google-plus"><i class="fa fa-fw pull-left fa-google-plus"></i><span class="social-title"> Google+</span></button></span>
             </a>
-            <a class="icon-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:2368/post-title-2/&title=Post Title&summary=
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non eros turpis. Nullam et purus congue, egestas neque vel, mattis turpis. Vestibulum convallis nibh sit amet dolor vulputate feugiat. Pellentesque sapien nisl, iaculis et ante sed, rutrum tincidunt sapien. Duis quam augue, porttitor quis pellentesque tempor, sodales vitae lacus. Integer"
+            <a class="icon-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url=http://ghostwire.apps.runkite.com/post-title-2/&title=Post Title&summary= Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non eros turpis. Nullam et purus congue, egestas neque vel, mattis turpis. Vestibulum convallis nibh sit amet dolor vulputate feugiat. Pellentesque sapien nisl, iaculis et ante sed, rutrum tincidunt sapien. Duis quam augue, porttitor quis pellentesque tempor, sodales vitae lacus. Integer"
                onclick="window.open(this.href, 'linkedin-share', 'width=490,height=530');return false;">
                 <span class="hidden"><button class="btn btn-secondary linkedin"><i class="fa fa-fw pull-left fa-linkedin"></i><span class="social-title"> LinkedIn</span></button></span>
             </a>
@@ -202,7 +201,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non eros turpis. N
 
 
         <!-- The Ghost footer helper will insert some shared javascript libraries and files required by plugins -->
-        <script src="shared/vendor/jquery/jquery.js"></script>
+        <script src="shared/vendor/jquery/jquery.js?v=4bfaeab2c2"></script>
 
         <!-- Javascript -->
         <!-- In the footer for better performance -->
@@ -220,7 +219,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non eros turpis. N
             if (responsive_viewport >= 768) {
 
                 $('#recent-posts').FeedEk({
-                    FeedUrl: 'http://127.0.0.1:2368/rss/',
+                    FeedUrl: 'http://ghostwire.apps.runkite.com/rss/',
                     MaxCount: 10,
                     ShowDesc: false,
                     ShowPubDate: true,

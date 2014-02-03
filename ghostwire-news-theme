@@ -25,8 +25,9 @@
         <link rel="stylesheet" id="custom-stylesheet-css" href="assets/css/custom.css" type="text/css" media="all">
 
         
-        <meta name="generator" content="Ghost 0.3" />
-<link rel="alternate" type="application/rss+xml" title="RSS" href="rss">
+        <meta name="generator" content="Ghost 0.4" />
+<link rel="alternate" type="application/rss+xml" title="Ghostwire" href="rss">
+<link rel="canonical" href="ghostwire-news-theme" />
 
         <!-- HTML5 Shim for IE 6-8 -->
         <!--[if lt IE 9]>
@@ -35,7 +36,7 @@
 
     </head>
 
-    <body id="top" class="post-template tag-news tag-feature tag-ghostwire">
+    <body id="top" class="post-template tag-ghostwire tag-news tag-feature">
 
         <!-- Old Browser Warning -->
         <!-- If you're supporting IE 6-7, remove this -->
@@ -74,11 +75,11 @@
 
     <header class="page-header">
          
+        <span class="page-tag"><span class="tag-name">Ghostwire</span></span>
+         
         <span class="page-tag"><span class="tag-name">News</span></span>
          
         <span class="page-tag"><span class="tag-name">Feature</span></span>
-         
-        <span class="page-tag"><span class="tag-name">Ghostwire</span></span>
         
 
         <h1 class="page-title">Welcome to Ghostwire</h1>
@@ -138,34 +139,24 @@
 
 <h3 id="documentation">Documentation</h3>
 
-<p>View the complete documentation <a href="http://ghostwire.apps.runkite.com/documentation.html">here</a>.</p>
+<p>View the complete documentation <a href="documentation.html">here</a>.</p>
             </section>
 
             <section class="post-share">
             <span class="share-header"><span class="section-header">Share</span></span>
-            <a class="icon-twitter" href="http://twitter.com/share?text=Welcome to Ghostwire&url=http://127.0.0.1:2368/ghostwire-news-theme/"
+            <a class="icon-twitter" href="http://twitter.com/share?text=Welcome to Ghostwire&url=http://ghostwire.apps.runkite.com/ghostwire-news-theme/"
                 onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                 <span class="hidden"><button class="btn btn-secondary twitter"><i class="fa fa-fw pull-left fa-twitter"></i><span class="social-title"> Twitter</span></button></span>
             </a>
-            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:2368/ghostwire-news-theme/"
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://ghostwire.apps.runkite.com/ghostwire-news-theme/"
                 onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                 <span class="hidden"><button class="btn btn-secondary facebook"><i class="fa fa-fw pull-left fa-facebook"></i><span class="social-title"> Facebook</span></button></span>
             </a>
-            <a class="icon-google-plus" href="https://plus.google.com/share?url=http://127.0.0.1:2368/ghostwire-news-theme/"
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=http://ghostwire.apps.runkite.com/ghostwire-news-theme/"
                onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                 <span class="hidden"><button class="btn btn-secondary google-plus"><i class="fa fa-fw pull-left fa-google-plus"></i><span class="social-title"> Google+</span></button></span>
             </a>
-            <a class="icon-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:2368/ghostwire-news-theme/&title=Welcome to Ghostwire&summary=
-
-Ghostwire: News is a magazine-style ghost theme perfect for any news or editorial blog. It was built mobile-first to be fully responsive and features a clean design that allows for your content to take the spotlight.
-                    
-                        
-                            Features:
-                            
-                                Tile-based Homepage Layout
-                                Featured Latest Post
-                                Unique Image Headers for Each Post
-                                Featured"
+            <a class="icon-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url=http://ghostwire.apps.runkite.com/ghostwire-news-theme/&title=Welcome to Ghostwire&summary= Ghostwire: News is a magazine-style ghost theme perfect for any news or editorial blog. It was built mobile-first to be fully responsive and features a clean design that allows for your content to take the spotlight.                                                                           Features:                                                              Tile-based Homepage Layout                                 Featured Latest Post                                 Unique Image Headers for Each Post                                 Featured"
                onclick="window.open(this.href, 'linkedin-share', 'width=490,height=530');return false;">
                 <span class="hidden"><button class="btn btn-secondary linkedin"><i class="fa fa-fw pull-left fa-linkedin"></i><span class="social-title"> LinkedIn</span></button></span>
             </a>
@@ -246,7 +237,7 @@ Ghostwire: News is a magazine-style ghost theme perfect for any news or editoria
 
 
         <!-- The Ghost footer helper will insert some shared javascript libraries and files required by plugins -->
-        <script src="shared/vendor/jquery/jquery.js"></script>
+        <script src="shared/vendor/jquery/jquery.js?v=4bfaeab2c2"></script>
 
         <!-- Javascript -->
         <!-- In the footer for better performance -->
@@ -264,7 +255,7 @@ Ghostwire: News is a magazine-style ghost theme perfect for any news or editoria
             if (responsive_viewport >= 768) {
 
                 $('#recent-posts').FeedEk({
-                    FeedUrl: 'http://127.0.0.1:2368/rss/',
+                    FeedUrl: 'http://ghostwire.apps.runkite.com/rss/',
                     MaxCount: 10,
                     ShowDesc: false,
                     ShowPubDate: true,
