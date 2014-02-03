@@ -135,7 +135,7 @@ jQuery(document).ready(function($) {
 (function ($) {
     $.fn.FeedEk = function (opt) {
         var def = $.extend({
-            FeedUrl: "hhttp://urbildpunkt.com/ghostwire/feed.rss",
+            FeedUrl: "http://urbildpunkt.com/ghostwire/feed.rss",
             MaxCount: 10,
             ShowDesc: false,
             ShowPubDate: true,
