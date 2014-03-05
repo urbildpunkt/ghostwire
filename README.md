@@ -1,7 +1,7 @@
-ghostwire
+Ghostwire: News [Live Preview](http://urbildpunkt.com/ghostwire/)
 =========
 
-Ghostwire: News is a magazine-style ghost theme perfect for any news or editorial blog. It was built mobile-first to be fully responsive and features a clean design that allows for your content to take the spotlight.
+A magazine-style ghost theme perfect for any news or editorial blog. It was built mobile-first to be fully responsive and features a clean design that allows for your content to take the spotlight.
 
 Features:
 - Tile-based Homepage Layout
